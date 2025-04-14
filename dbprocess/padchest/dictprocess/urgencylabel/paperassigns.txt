@@ -1,0 +1,179 @@
+chronic changes & Lung \\
+calcified densities & Calcification \\
+calcified granuloma & Lung, Calcification \\
+calcified adenopathy & MH, Calcification \\
+calcified mediastinal adenopathy & MH, Calcification \\
+calcified pleural plaques & PDTW, Calcification \\
+heart valve calcified & MH, Calcification \\
+calcified fibroadenoma & Calcification \\
+calcified pleural thickening & PDTW, Calcification \\
+granuloma & Lung \\
+nodule & Nodules \\
+multiple nodules & Nodules \\
+pseudonodule & Pseudonodule \\
+nipple shadow & Pseudonodule \\
+end on vessel & Pseudonodule \\
+cyst & Lung \\
+cavitation & Lung \\
+fibrotic band & Lung \\
+volume loss & Lung \\
+hypoexpansion & Lung \\
+hypoexpansion basal & Lung \\
+bullas & Lung \\
+pneumothorax & Pneumothorax \\
+hydropneumothorax & Pleural effusion, Pneumothorax \\
+pneumoperitoneo & PDTW \\
+pneumomediastinum & MH \\
+subcutaneous emphysema & PDTW-urgent \\
+flattened diaphragm & PDTW \\
+lung vascular paucity & Lung \\
+air trapping & Lung \\
+bronchiectasis & Lung \\
+infiltrates & Infiltrates \\
+interstitial pattern & Infiltrates \\
+ground glass pattern & Infiltrates \\
+reticular interstitial pattern & Infiltrates \\
+reticulonodular interstitial pattern & Infiltrates \\
+miliary opacities & Infiltrates \\
+alveolar pattern & Infiltrates \\
+consolidation & Infiltrates \\
+air bronchogram & Infiltrates \\
+bronchovascular markings & Lung \\
+increased density & Lung \\
+atelectasis & Atelectasis \\
+total atelectasis & Atelectasis \\
+lobar atelectasis & Atelectasis \\
+segmental atelectasis & Atelectasis \\
+laminar atelectasis & Atelectasis \\
+round atelectasis & Atelectasis \\
+atelectasis basal & Atelectasis \\
+mediastinal shift & MH \\
+azygos lobe & Lung \\
+fissure thickening & PDTW \\
+minor fissure thickening & PDTW \\
+major fissure thickening & PDTW \\
+loculated fissural effusion & Pleural effusion \\
+pleural thickening & PDTW-incidental \\
+apical pleural thickening & PDTW-incidental \\
+calcified pleural thickening & PDTW-incidental, Calcification \\
+pleural plaques & PDTW, Calcification \\
+pleural effusion & Pleural effusion \\
+loculated pleural effusion & Pleural effusion \\
+loculated fissural effusion & Pleural effusion \\
+pericardial effusion & PDTW \\
+hiatal hernia & Hiatal hernia \\
+pleural mass & PDTW-urgent, Mass \\
+costophrenic angle blunting & Costophrenic angle blunting \\
+vascular redistribution & Lung \\
+central vascular redistribution & Lung \\
+hilar enlargement & Hila \\
+adenopathy & Hila \\
+vascular hilar enlargement & Vascular hilar enlargement \\
+pulmonary artery enlargement & Vascular hilar enlargement \\
+hilar congestion & Hila, MH-urgent \\
+cardiomegaly & Cardiomegaly, MH-urgent \\
+kerley lines & Lung \\
+dextrocardia & MH \\
+right sided aortic arch & MH \\
+aortic atheromatosis & MH, Calcification \\
+aortic elongation & Aortic elongation, MH \\
+descendent aortic elongation & Aortic elongation, MH \\
+ascendent aortic elongation & Aortic elongation, MH \\
+aortic button enlargement & Aortic elongation, MH \\
+supra aortic elongation & Aortic elongation, MH \\
+aortic aneurysm & MH \\
+mediastinal enlargement & MH \\
+superior mediastinal enlargement & MH-urgent \\
+goiter & MH \\
+mediastinal mass & MH-urgent, Mass \\
+tracheal shift & MH-urgent, MH \\
+esophagic dilatation & MH \\
+azygoesophageal recess shift & MH \\
+mediastinic lipomatosis & MH \\
+thoracic cage deformation & PDTW \\
+scoliosis & PDTW \\
+kyphosis & PDTW \\
+pectum excavatum & PDTW \\
+pectum carinatum & PDTW \\
+cervical rib & PDTW \\
+vertebral degenerative changes & Vertebral degenerative changes \\
+lytic bone lesion & PDTW-urgent \\
+sclerotic bone lesion & PDTW-urgent \\
+blastic bone lesion & PDTW-urgent, PDTW \\
+costochondral junction hypertrophy & PDTW \\
+sternoclavicular junction hypertrophy & PDTW \\
+axial hyperostosis & PDTW \\
+osteopenia & PDTW \\
+osteoporosis & PDTW \\
+non axial articular degenerative changes & PDTW-incidental \\
+subacromial space narrowing & PDTW \\
+fracture & PDTW-urgent \\
+clavicle fracture & PDTW-urgent \\
+humeral fracture & PDTW-urgent \\
+vertebral fracture & PDTW-urgent \\
+rib fracture & PDTW-urgent \\
+callus rib fracture & PDTW-incidental \\
+gynecomastia & PDTW \\
+Chilaiditi sign & PDTW \\
+hemidiaphragm elevation & PDTW \\
+diaphragmatic eventration & PDTW \\
+pneumonia & Pneumonia, Lung-urgent \\
+atypical pneumonia & Pneumonia, Lung-urgent \\
+tuberculosis & Lung \\
+tuberculosis sequelae & Lung \\
+lung metastasis & Lung \\
+pulmonary fibrosis & Lung \\
+post radiotherapy changes & Lung \\
+asbestosis signs & Lung \\
+emphysema & COPD / Emphysema \\
+COPD signs & COPD / Emphysema \\
+heart insufficiency & Lung \\
+respiratory distress & Lung \\
+pulmonary hypertension & Lung \\
+pulmonary artery hypertension & Lung \\
+pulmonary venous hypertension & Lung \\
+pulmonary edema & Lung \\
+bone metastasis & Lung \\
+mass & Mass \\
+mediastinal mass & MH-urgent, Mass \\
+breast mass & Mass \\
+pleural mass & PDTW-urgent, Mass \\
+pulmonary mass & Lung-urgent, Mass \\
+soft tissue mass & PDTW-urgent, Mass \\
+tracheostomy tube & Tube \\
+endotracheal tube & Tube \\
+NSG tube & NSG Tube \\
+chest drain tube & Tube \\
+ventriculoperitoneal drain tube & Tube \\
+catheter & Catheter \\
+central venous catheter & Catheter \\
+central venous catheter via subclavian vein & Catheter \\
+central venous catheter via jugular vein & Catheter \\
+reservoir central venous catheter & Catheter \\
+central venous catheter via umbilical vein & Catheter \\
+electrical device & Electrical devices \\
+dual chamber device & Electrical devices \\
+single chamber device & Electrical devices \\
+pacemaker & Electrical devices \\
+dai & Electrical devices \\
+artificial heart valve & Foreign bodies \\
+artificial mitral heart valve & Foreign bodies \\
+artificial aortic heart valve & Foreign bodies \\
+surgery & Surgery \\
+metal & Surgery \\
+osteosynthesis material & Surgery \\
+sternotomy & Surgery \\
+suture material & Surgery \\
+bone cement & Surgery \\
+prosthesis & Surgery \\
+humeral prosthesis & Surgery \\
+mammary prosthesis & Surgery \\
+endoprosthesis & Surgery \\
+aortic endoprosthesis & Surgery \\
+surgery breast & Surgery \\
+mastectomy & Surgery \\
+surgery neck & Surgery \\
+surgery lung & Surgery \\
+surgery heart & Surgery \\
+surgery humeral & Surgery \\
+suboptimal study & Suboptimal \\

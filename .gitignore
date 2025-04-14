@@ -1,0 +1,9 @@
+# Ignore .sh files
+**/*.sh
+
+# Ignore pycache folders
+**/__pycache__
+
+# Ignore slurm and progress files
+**/slurm*
+**/progress*
