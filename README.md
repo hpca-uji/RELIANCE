@@ -4,7 +4,9 @@ The RELIANCE project—*Radiología intELIgente en procesos AsisteNCiales urgEnt
 
 # About the project
 
-This project focuses on the design and development of an intelligent system for classifying chest X-rays into a 32-category pathology system, specifically tailored for radiologists at the General University Hospital of Castellón, Spain. The system leverages deep learning models, including convolutional neural networks and vision transformers, intended for integration into medical device software to improve triage processes. A two-phase hyperparameter search found that the top-performing convolutional model achieved an AUC of 0.911, closely matching the 0.914 of the optimal vision transformer, highlighting the suitability of convolutional models for resource-constrained environments. The study also revealed inconsistencies in methodologies for effective augmentation and generalization, as training experiments showed minimal performance variation across different augmentation levels.
+This project focuses on the design and development of DNN for classifying chest X-rays into a 32-category pathology system specifically tailored for radiologists at the General University Hospital of Castellón, Spain. The system leverages deep learning models, including convolutional neural networks and vision transformers, intended for integration into medical device software to improve triage processes. A two-phase hyperparameter search found that the top-performing convolutional model achieved an AUC of 0.911, closely matching the 0.914 of the optimal vision transformer, highlighting the suitability of convolutional models for resource-constrained environments. The study also revealed inconsistencies in methodologies for effective augmentation and generalization, as training experiments showed minimal performance variation across different augmentation levels.
+
+![32-category pathology system](images/hierachy.png)
 
 # Requirements
 
