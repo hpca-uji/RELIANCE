@@ -1,248 +1,248 @@
 
-padchestPKT/: 106158 counts
+padchestPKT/: 101354 counts
 
 UNK_GENDER: 3
 UNK_AGE: 3
-UNDER_AGE: 4804
-total: 106158 counts
-Mass                                915
-Lung                              46074
-Lung-urgent                       22939
-Nodules / Multiple nodules         2532
-Pneumonia                          5221
-Infiltrates                       14317
-Atelectasis                        6156
-COPD / Emphysema                  14740
-MH                                20694
-MH-urgent                         12502
-Cardiomegaly                       9805
-Hila                               2257
-Vascular hilar enlargement         3143
+UNDER_AGE: 0
+total: 101354 counts
+Mass                                890
+Lung                              44052
+Lung-urgent                       21352
+Nodules / Multiple nodules         2516
+Pneumonia                          4264
+Infiltrates                       13127
+Atelectasis                        5979
+COPD / Emphysema                  14727
+MH                                20391
+MH-urgent                         12261
+Cardiomegaly                       9721
+Hila                               2142
+Vascular hilar enlargement         3091
 Aortic elongation                  8377
-PDTW                              29288
-PDTW-urgent                       12285
-Pleural effusion                   7021
-Pneumothorax                        414
-Costophrenic angle blunting        4240
-PDTW-incidental                    8043
+PDTW                              28977
+PDTW-urgent                       12075
+Pleural effusion                   6930
+Pneumothorax                        339
+Costophrenic angle blunting        4199
+PDTW-incidental                    8038
 Vertebral degenerative changes     2920
-Hiatal hernia                      1603
-Foreign bodies                    15686
+Hiatal hernia                      1598
+Foreign bodies                    15148
 Electrical devices                 2454
-Tube                               7202
-NSG Tube                           5313
-Catheter                           5655
-Surgery                            5330
-Calcification                      5316
-Pseudonodule                       1890
-Suboptimal                         1482
-Normal                            40936
+Tube                               6740
+NSG Tube                           4907
+Catheter                           5369
+Surgery                            5303
+Calcification                      5314
+Pseudonodule                       1878
+Suboptimal                         1369
+Normal                            38460
 dtype: int64
 
-PA: 88480 counts
-Mass                                804
-Lung                              35229
-Lung-urgent                       14268
-Nodules / Multiple nodules         2325
-Pneumonia                          3401
-Infiltrates                        7758
-Atelectasis                        3976
-COPD / Emphysema                  13832
-MH                                17755
-MH-urgent                         10372
-Cardiomegaly                       8384
-Hila                               1537
-Vascular hilar enlargement         2548
+PA: 85477 counts
+Mass                                798
+Lung                              34187
+Lung-urgent                       13469
+Nodules / Multiple nodules         2316
+Pneumonia                          2811
+Infiltrates                        7189
+Atelectasis                        3894
+COPD / Emphysema                  13829
+MH                                17612
+MH-urgent                         10262
+Cardiomegaly                       8360
+Hila                               1461
+Vascular hilar enlargement         2518
 Aortic elongation                  7851
-PDTW                              23718
-PDTW-urgent                        7605
-Pleural effusion                   3332
-Pneumothorax                        222
-Costophrenic angle blunting        3472
-PDTW-incidental                    7564
+PDTW                              23549
+PDTW-urgent                        7514
+Pleural effusion                   3274
+Pneumothorax                        216
+Costophrenic angle blunting        3442
+PDTW-incidental                    7560
 Vertebral degenerative changes     2833
 Hiatal hernia                      1475
-Foreign bodies                     6400
+Foreign bodies                     6372
 Electrical devices                 1776
-Tube                                478
-NSG Tube                            173
-Catheter                            547
-Surgery                            4089
-Calcification                      4886
-Pseudonodule                       1805
-Suboptimal                          649
-Normal                            36633
+Tube                                470
+NSG Tube                            167
+Catheter                            540
+Surgery                            4076
+Calcification                      4884
+Pseudonodule                       1794
+Suboptimal                          588
+Normal                            34833
 dtype: int64
 
-AP: 4311 counts
-Mass                                34
-Lung                              2584
-Lung-urgent                       1985
-Nodules / Multiple nodules          84
-Pneumonia                          490
-Infiltrates                       1480
-Atelectasis                        446
-COPD / Emphysema                   238
-MH                                 655
-MH-urgent                          473
-Cardiomegaly                       357
-Hila                               100
-Vascular hilar enlargement         134
+AP: 3185 counts
+Mass                                21
+Lung                              1963
+Lung-urgent                       1462
+Nodules / Multiple nodules          81
+Pneumonia                          267
+Infiltrates                       1054
+Atelectasis                        382
+COPD / Emphysema                   230
+MH                                 565
+MH-urgent                          400
+Cardiomegaly                       322
+Hila                                79
+Vascular hilar enlargement         122
 Aortic elongation                  153
-PDTW                              1106
-PDTW-urgent                        829
-Pleural effusion                   617
-Pneumothorax                        72
-Costophrenic angle blunting        115
-PDTW-incidental                    129
+PDTW                              1015
+PDTW-urgent                        749
+Pleural effusion                   597
+Pneumothorax                        22
+Costophrenic angle blunting        107
+PDTW-incidental                    128
 Vertebral degenerative changes      38
-Hiatal hernia                       50
-Foreign bodies                    1879
+Hiatal hernia                       48
+Foreign bodies                    1485
 Electrical devices                 103
-Tube                              1440
-NSG Tube                          1219
-Catheter                          1010
-Surgery                            212
+Tube                              1086
+NSG Tube                           907
+Catheter                           783
+Surgery                            204
 Calcification                      117
 Pseudonodule                        31
-Suboptimal                         214
-Normal                            1186
+Suboptimal                         172
+Normal                             772
 dtype: int64
 
-AP_horizontal: 13367 counts
-Mass                                77
-Lung                              8261
-Lung-urgent                       6686
-Nodules / Multiple nodules         123
-Pneumonia                         1330
-Infiltrates                       5079
-Atelectasis                       1734
-COPD / Emphysema                   670
-MH                                2284
-MH-urgent                         1657
-Cardiomegaly                      1064
-Hila                               620
-Vascular hilar enlargement         461
+AP_horizontal: 12692 counts
+Mass                                71
+Lung                              7902
+Lung-urgent                       6421
+Nodules / Multiple nodules         119
+Pneumonia                         1186
+Infiltrates                       4884
+Atelectasis                       1703
+COPD / Emphysema                   668
+MH                                2214
+MH-urgent                         1599
+Cardiomegaly                      1039
+Hila                               602
+Vascular hilar enlargement         451
 Aortic elongation                  373
-PDTW                              4464
-PDTW-urgent                       3851
-Pleural effusion                  3072
-Pneumothorax                       120
-Costophrenic angle blunting        653
+PDTW                              4413
+PDTW-urgent                       3812
+Pleural effusion                  3059
+Pneumothorax                       101
+Costophrenic angle blunting        650
 PDTW-incidental                    350
 Vertebral degenerative changes      49
-Hiatal hernia                       78
-Foreign bodies                    7407
+Hiatal hernia                       75
+Foreign bodies                    7291
 Electrical devices                 575
-Tube                              5284
-NSG Tube                          3921
-Catheter                          4098
-Surgery                           1029
+Tube                              5184
+NSG Tube                          3833
+Catheter                          4046
+Surgery                           1023
 Calcification                      313
-Pseudonodule                        54
-Suboptimal                         619
-Normal                            3117
+Pseudonodule                        53
+Suboptimal                         609
+Normal                            2855
 dtype: int64
 
-F: 52742 counts
-Mass                                350
-Lung                              18523
-Lung-urgent                        9696
-Nodules / Multiple nodules         1035
-Pneumonia                          2258
-Infiltrates                        5876
-Atelectasis                        2876
-COPD / Emphysema                   3581
-MH                                10215
-MH-urgent                          6600
-Cardiomegaly                       5529
-Hila                                834
-Vascular hilar enlargement         1230
+F: 50576 counts
+Mass                                345
+Lung                              17586
+Lung-urgent                        8949
+Nodules / Multiple nodules         1027
+Pneumonia                          1807
+Infiltrates                        5320
+Atelectasis                        2783
+COPD / Emphysema                   3577
+MH                                10075
+MH-urgent                          6494
+Cardiomegaly                       5488
+Hila                                783
+Vascular hilar enlargement         1198
 Aortic elongation                  4209
-PDTW                              14311
-PDTW-urgent                        5279
-Pleural effusion                   2988
-Pneumothorax                        147
-Costophrenic angle blunting        1809
-PDTW-incidental                    3374
+PDTW                              14182
+PDTW-urgent                        5199
+Pleural effusion                   2952
+Pneumothorax                        121
+Costophrenic angle blunting        1789
+PDTW-incidental                    3372
 Vertebral degenerative changes     1430
 Hiatal hernia                      1032
-Foreign bodies                     6944
+Foreign bodies                     6701
 Electrical devices                  867
-Tube                               2827
-NSG Tube                           2202
-Catheter                           2315
-Surgery                            2816
-Calcification                      2787
-Pseudonodule                        604
-Suboptimal                          703
-Normal                            23198
+Tube                               2624
+NSG Tube                           2019
+Catheter                           2177
+Surgery                            2800
+Calcification                      2786
+Pseudonodule                        598
+Suboptimal                          648
+Normal                            22103
 dtype: int64
 
-M: 53399 counts
-Mass                                565
-Lung                              27547
-Lung-urgent                       13239
-Nodules / Multiple nodules         1497
-Pneumonia                          2963
-Infiltrates                        8437
-Atelectasis                        3279
-COPD / Emphysema                  11159
-MH                                10476
-MH-urgent                          5901
-Cardiomegaly                       4275
-Hila                               1423
-Vascular hilar enlargement         1913
+M: 50761 counts
+Mass                                545
+Lung                              26462
+Lung-urgent                       12399
+Nodules / Multiple nodules         1489
+Pneumonia                          2457
+Infiltrates                        7803
+Atelectasis                        3195
+COPD / Emphysema                  11150
+MH                                10313
+MH-urgent                          5766
+Cardiomegaly                       4232
+Hila                               1359
+Vascular hilar enlargement         1893
 Aortic elongation                  4166
-PDTW                              14972
-PDTW-urgent                        7005
-Pleural effusion                   4032
-Pneumothorax                        267
-Costophrenic angle blunting        2431
-PDTW-incidental                    4669
+PDTW                              14790
+PDTW-urgent                        6875
+Pleural effusion                   3977
+Pneumothorax                        218
+Costophrenic angle blunting        2410
+PDTW-incidental                    4666
 Vertebral degenerative changes     1490
-Hiatal hernia                       571
-Foreign bodies                     8738
+Hiatal hernia                       566
+Foreign bodies                     8443
 Electrical devices                 1587
-Tube                               4373
-NSG Tube                           3109
-Catheter                           3340
-Surgery                            2511
-Calcification                      2528
-Pseudonodule                       1286
-Suboptimal                          778
-Normal                            17730
+Tube                               4114
+NSG Tube                           2886
+Catheter                           3192
+Surgery                            2500
+Calcification                      2527
+Pseudonodule                       1280
+Suboptimal                          720
+Normal                            16349
 dtype: int64
 
-padchest counts: 106158
+padchest counts: 101354
 chestx counts: 0
 
-chestxPKT/: 51759 counts
+chestxPKT/: 50080 counts
 
 UNK_GENDER: 0
 UNK_AGE: 0
-UNDER_AGE: 1679
-total: 51759 counts
-Mass                               5782
-Lung                              38964
-Lung-urgent                       37363
-Nodules / Multiple nodules         6331
-Pneumonia                          1431
-Infiltrates                       23340
-Atelectasis                       11559
-COPD / Emphysema                   2516
-MH                                 2776
-MH-urgent                          2776
-Cardiomegaly                       2776
+UNDER_AGE: 0
+total: 50080 counts
+Mass                               5638
+Lung                              37622
+Lung-urgent                       36079
+Nodules / Multiple nodules         6211
+Pneumonia                          1345
+Infiltrates                       22316
+Atelectasis                       11286
+COPD / Emphysema                   2448
+MH                                 2641
+MH-urgent                          2641
+Cardiomegaly                       2641
 Hila                                  0
 Vascular hilar enlargement            0
 Aortic elongation                     0
-PDTW                              20140
-PDTW-urgent                       17623
-Pleural effusion                  13317
-Pneumothorax                       5302
+PDTW                              19592
+PDTW-urgent                       17131
+Pleural effusion                  12988
+Pneumothorax                       5092
 Costophrenic angle blunting           0
-PDTW-incidental                    3385
+PDTW-incidental                    3296
 Vertebral degenerative changes        0
 Hiatal hernia                       227
 Foreign bodies                        0
@@ -257,27 +257,27 @@ Suboptimal                            0
 Normal                                0
 dtype: int64
 
-PA: 28008 counts
-Mass                               3567
-Lung                              19856
-Lung-urgent                       18856
-Nodules / Multiple nodules         4177
-Pneumonia                           630
-Infiltrates                       10550
-Atelectasis                        5728
-COPD / Emphysema                   1499
-MH                                 1563
-MH-urgent                          1563
-Cardiomegaly                       1563
+PA: 27450 counts
+Mass                               3494
+Lung                              19449
+Lung-urgent                       18462
+Nodules / Multiple nodules         4127
+Pneumonia                           600
+Infiltrates                       10242
+Atelectasis                        5646
+COPD / Emphysema                   1484
+MH                                 1524
+MH-urgent                          1524
+Cardiomegaly                       1524
 Hila                                  0
 Vascular hilar enlargement            0
 Aortic elongation                     0
-PDTW                              11181
-PDTW-urgent                        9331
-Pleural effusion                   6589
-Pneumothorax                       3407
+PDTW                              11015
+PDTW-urgent                        9190
+Pleural effusion                   6495
+Pneumothorax                       3346
 Costophrenic angle blunting           0
-PDTW-incidental                    2418
+PDTW-incidental                    2381
 Vertebral degenerative changes        0
 Hiatal hernia                       192
 Foreign bodies                        0
@@ -292,27 +292,27 @@ Suboptimal                            0
 Normal                                0
 dtype: int64
 
-AP: 23751 counts
-Mass                               2215
-Lung                              19108
-Lung-urgent                       18507
-Nodules / Multiple nodules         2154
-Pneumonia                           801
-Infiltrates                       12790
-Atelectasis                        5831
-COPD / Emphysema                   1017
-MH                                 1213
-MH-urgent                          1213
-Cardiomegaly                       1213
+AP: 22630 counts
+Mass                               2144
+Lung                              18173
+Lung-urgent                       17617
+Nodules / Multiple nodules         2084
+Pneumonia                           745
+Infiltrates                       12074
+Atelectasis                        5640
+COPD / Emphysema                    964
+MH                                 1117
+MH-urgent                          1117
+Cardiomegaly                       1117
 Hila                                  0
 Vascular hilar enlargement            0
 Aortic elongation                     0
-PDTW                               8959
-PDTW-urgent                        8292
-Pleural effusion                   6728
-Pneumothorax                       1895
+PDTW                               8577
+PDTW-urgent                        7941
+Pleural effusion                   6493
+Pneumothorax                       1746
 Costophrenic angle blunting           0
-PDTW-incidental                     967
+PDTW-incidental                     915
 Vertebral degenerative changes        0
 Hiatal hernia                        35
 Foreign bodies                        0
@@ -327,27 +327,27 @@ Suboptimal                            0
 Normal                                0
 dtype: int64
 
-F: 22341 counts
-Mass                               2253
-Lung                              16347
-Lung-urgent                       15761
-Nodules / Multiple nodules         2646
-Pneumonia                           593
-Infiltrates                        9944
-Atelectasis                        4653
-COPD / Emphysema                    906
-MH                                 1469
-MH-urgent                          1469
-Cardiomegaly                       1469
+F: 21624 counts
+Mass                               2192
+Lung                              15770
+Lung-urgent                       15232
+Nodules / Multiple nodules         2586
+Pneumonia                           554
+Infiltrates                        9533
+Atelectasis                        4549
+COPD / Emphysema                    854
+MH                                 1427
+MH-urgent                          1427
+Cardiomegaly                       1427
 Hila                                  0
 Vascular hilar enlargement            0
 Aortic elongation                     0
-PDTW                               9005
-PDTW-urgent                        7996
-Pleural effusion                   5882
-Pneumothorax                       2585
+PDTW                               8771
+PDTW-urgent                        7780
+Pleural effusion                   5742
+Pneumothorax                       2487
 Costophrenic angle blunting           0
-PDTW-incidental                    1343
+PDTW-incidental                    1319
 Vertebral degenerative changes        0
 Hiatal hernia                       131
 Foreign bodies                        0
@@ -362,27 +362,27 @@ Suboptimal                            0
 Normal                                0
 dtype: int64
 
-M: 29418 counts
-Mass                               3529
-Lung                              22617
-Lung-urgent                       21602
-Nodules / Multiple nodules         3685
-Pneumonia                           838
-Infiltrates                       13396
-Atelectasis                        6906
-COPD / Emphysema                   1610
-MH                                 1307
-MH-urgent                          1307
-Cardiomegaly                       1307
+M: 28456 counts
+Mass                               3446
+Lung                              21852
+Lung-urgent                       20847
+Nodules / Multiple nodules         3625
+Pneumonia                           791
+Infiltrates                       12783
+Atelectasis                        6737
+COPD / Emphysema                   1594
+MH                                 1214
+MH-urgent                          1214
+Cardiomegaly                       1214
 Hila                                  0
 Vascular hilar enlargement            0
 Aortic elongation                     0
-PDTW                              11135
-PDTW-urgent                        9627
-Pleural effusion                   7435
-Pneumothorax                       2717
+PDTW                              10821
+PDTW-urgent                        9351
+Pleural effusion                   7246
+Pneumothorax                       2605
 Costophrenic angle blunting           0
-PDTW-incidental                    2042
+PDTW-incidental                    1977
 Vertebral degenerative changes        0
 Hiatal hernia                        96
 Foreign bodies                        0
@@ -398,7 +398,7 @@ Normal                                0
 dtype: int64
 
 padchest counts: 0
-chestx counts: 51759
+chestx counts: 50080
 
 combined: 151434 counts
 

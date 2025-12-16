@@ -170,6 +170,8 @@ def objective(trial):
                              --drop_type {drop_type} \
                              --drop_rate {drop_rate} \
                              --activation {activation} \
+                             --pin_memory \
+                             -j 4 \
                              --num_label 32 &>> progress.txt",
             shell=True,
         )
@@ -200,6 +202,8 @@ def objective(trial):
                              --drop_type {drop_type} \
                              --drop_rate {drop_rate} \
                              --activation {activation} \
+                             --pin_memory \
+                             -j 4 \
                              --num_label 32 &>> progress.txt",
             shell=True,
         )

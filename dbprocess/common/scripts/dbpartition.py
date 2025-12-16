@@ -59,8 +59,8 @@ def check_save_folder(save_path):
         exit(-1)
 
 
-def compute_proportion_value(y_tr, y_ts, y_vl):
-    """Computes proportion values and returns de difference with the proportion on tr and ts"""
+def compute_triple_proportion_value(y_tr, y_ts, y_vl):
+    """Computes proportion values and returns the difference with the proportion on tr, vl, ts"""
     # Compute proportions of each label
     proportions_tr = y_tr.sum(axis=0) / len(y_tr)
     proportions_ts = y_ts.sum(axis=0) / len(y_ts)
@@ -72,6 +72,17 @@ def compute_proportion_value(y_tr, y_ts, y_vl):
     total_diff = diff1 + diff2
 
     return total_diff
+
+def compute_double_proportion_value(y_tr, y_vl):
+    """Computes proportion values and returns the difference with the proportion on tr, vl"""
+    # Compute proportions of each label
+    proportions_tr = y_tr.sum(axis=0) / len(y_tr)
+    proportions_vl = y_vl.sum(axis=0) / len(y_vl)
+
+    # Proportions should be similar among the three groups
+    diff = abs(proportions_tr - proportions_vl).sum()
+
+    return diff
 
 
 def get_xyproperties(df, numeric_columns):
@@ -182,12 +193,12 @@ def process_df(df, discard, header):
     # Drop Discard and DiscardCNN
     df = df.drop(labels=["Discard", "DiscardCNN", "Exclude", "Unchanged"], axis=1)
 
-    # Print stats
-    print_stats(df, header)
-
     # Discard underage if indicated
     if discard == 1:
         df = df[df["PatientAge"] >= 16].reset_index(drop=True)
+
+    # Print stats
+    print_stats(df, header)
 
     return df
 
@@ -250,15 +261,15 @@ def main():
     with open(args.labelnames_path) as f:
         labelnames = json.load(f)
 
-    # Create X, y, groups
-    savedata = get_xyproperties(combined_df, labelnames)
-    X = savedata[0]
-    y = savedata[1]
-    properties = savedata[2]
-    groups = combined_df["PatientID"].to_numpy(dtype=object)
-
     # Create new partition
     if args.previous_labeling is None:
+
+        # Split into paths, labels, properties
+        savedata = get_xyproperties(combined_df, labelnames)
+        X = savedata[0]
+        y = savedata[1]
+        properties = savedata[2]
+        groups = combined_df["PatientID"].to_numpy(dtype=object)
 
         # Split into tr, vl and ts
         spliter1 = GroupShuffleSplit(
@@ -290,15 +301,15 @@ def main():
                 y_vl = y_rest[vl_idx]
 
                 # Check proportion value and minimize
-                value = compute_proportion_value(y_tr, y_ts, y_vl)
+                value = compute_triple_proportion_value(y_tr, y_ts, y_vl)
                 if value < best_proportion:
                     best_tr = [X[tr_idx], y[tr_idx], properties[tr_idx]]
                     best_ts = [X_rest[ts_idx], y_rest[ts_idx], properties[ts_idx]]
                     best_vl = [X_rest[vl_idx], y_rest[vl_idx], properties[vl_idx]]
                     best_proportion = value
+    elif os.path.isdir(args.previous_labeling):
 
-    else:
-
+        # We read a folder with all paths for each partition
         # Read paths
         tr_paths = np.load(
             os.path.join(args.previous_labeling, "tr_paths.npy"), allow_pickle=True
@@ -317,7 +328,55 @@ def main():
         best_tr = get_xyproperties(tr_df, labelnames)
         best_vl = get_xyproperties(vl_df, labelnames)
         best_ts = get_xyproperties(ts_df, labelnames)
+    else:
 
+        # We read a file with ts paths by line
+        # Read file by line to get each ts path
+        ts_paths_file = open(args.previous_labeling, mode="r")
+        ts_paths = []
+        for line in ts_paths_file:
+            ts_paths.append("chestxPKT/" + line.strip().replace(".png",".pkt")) # File with ts paths is only chestxray14 processing case
+        # Convert to numpy
+        ts_paths = np.array(ts_paths)
+
+        # Split combined df
+        trvl_df = combined_df[~combined_df["ImageID"].isin(ts_paths)]
+        ts_df = combined_df[combined_df["ImageID"].isin(ts_paths)]
+
+        # Final preparation for ts data
+        best_ts = get_xyproperties(ts_df, labelnames)
+    
+        # Split tr/vl into paths, labels, properties
+        savedata = get_xyproperties(trvl_df, labelnames)
+        X = savedata[0]
+        y = savedata[1]
+        properties = savedata[2]
+        groups = trvl_df["PatientID"].to_numpy(dtype=object)
+
+        # Create splitter
+        spliter = GroupShuffleSplit(
+            n_splits=1000, train_size=0.9, random_state=args.seed
+        )
+
+        # Placeholder vars
+        best_tr = None
+        best_vl = None
+        best_proportion = float("infinity")
+
+        # Try several splits
+        for tr_idx, vl_idx in spliter.split(X, y, groups):
+            
+            # Split y
+            y_tr = y[tr_idx]
+            y_vl = y[vl_idx]
+
+            # Check proportion value and minimize
+            value = compute_double_proportion_value(y_tr, y_vl)
+            if value < best_proportion:
+                best_tr = [X[tr_idx], y[tr_idx], properties[tr_idx]]
+                best_vl = [X[vl_idx], y[vl_idx], properties[vl_idx]]
+                best_proportion = value        
+        
     # Show partition_stats
     print_stats(combined_df[combined_df["ImageID"].isin(best_tr[0])], "tr")
     print_stats(combined_df[combined_df["ImageID"].isin(best_ts[0])], "ts")

@@ -27,6 +27,9 @@ def load_args():
     parser.add_argument("labelnames_path", type=str)
     parser.add_argument("model_path", type=str)
 
+    parser.add_argument("--pin_memory", action="store_true", default=False)
+    parser.add_argument("--num_workers", "-j", type=int, default=0)
+
     parser.add_argument("--batch_size", type=int, default=8)
     parser.add_argument("--prev_alpha", type=float, default=0.0)
     parser.add_argument("--freeze_extraction", type=int, choices=[0, 1], default=1)
@@ -246,6 +249,8 @@ def main():
             multigpu=1,
             datransforms=datransforms,
             batch_size=args.batch_size,
+            pin_memory=args.pin_memory,
+            num_workers=args.num_workers
         )
 
     # Create validation dataloaders
@@ -256,6 +261,8 @@ def main():
         multigpu=1,
         datransforms=None,
         batch_size=args.batch_size,
+        pin_memory=args.pin_memory,
+        num_workers=args.num_workers
     )
     dst_vl_data, _ = setup_simple_dataloader(
         img_path=args.img_path,
@@ -264,6 +271,8 @@ def main():
         multigpu=1,
         datransforms=None,
         batch_size=args.batch_size,
+        pin_memory=args.pin_memory,
+        num_workers=args.num_workers
     )
 
     # Read labelnames
@@ -317,6 +326,8 @@ def main():
                 datransforms=datransforms,
                 batch_size=args.batch_size,
                 prev_alpha=args.prev_alpha,
+                pin_memory=args.pin_memory,
+                num_workers=args.num_workers
             )
         if device == 0:
             # Print empty line on one device

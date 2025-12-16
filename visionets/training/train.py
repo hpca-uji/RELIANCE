@@ -40,6 +40,9 @@ def load_args():
         help="Write best metric result to this path",
     )
 
+    parser.add_argument("--pin_memory", action="store_true", default=False)
+    parser.add_argument("--num_workers", "-j", type=int, default=0)
+
     parser.add_argument("--batch_size", type=int, default=8)
     parser.add_argument("--epochs", type=int, default=15)
     parser.add_argument("--epochs_freeze", type=int, default=1)
@@ -322,6 +325,8 @@ def main():
         datransforms=datransforms,
         num_repeats=args.num_repeats,
         batch_size=args.batch_size,
+        pin_memory=args.pin_memory,
+        num_workers=args.num_workers,
     )
 
     vl_data, _ = setup_simple_dataloader(
@@ -331,6 +336,8 @@ def main():
         multigpu=1,
         datransforms=None,
         batch_size=args.batch_size,
+        pin_memory=args.pin_memory,
+        num_workers=args.num_workers,
     )
 
     # Set up frozen optimizer

@@ -17,6 +17,7 @@ def load_args():
     parser.add_argument("save_path", type=str)
     parser.add_argument("idf_list", type=str, nargs="+")
     parser.add_argument("--batch_size", type=int, default=128)
+    parser.add_argument("--num_workers", "-j", type=int, default=10)
     args = parser.parse_args()
 
     return args
@@ -73,6 +74,7 @@ def main():
             label_path=args.label_path,
             idf_list=[idf],
             batch_size=args.batch_size,
+            num_workers=args.num_workers
         )
 
         # Inference and save data

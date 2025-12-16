@@ -1,0 +1,44 @@
+{
+    "Atelectasis": [
+        "Atelectasis"
+    ],
+    "Cardiomegaly": [
+        "Cardiomegaly"
+    ],
+    "Effusion": [
+        "Effusion"
+    ],
+    "Infiltration": [
+        "Infiltration"
+    ],
+    "Mass": [
+        "Mass"
+    ],
+    "Nodule": [
+        "Nodule"
+    ],
+    "Pneumonia": [
+        "Pneumonia"
+    ],
+    "Pneumothorax": [
+        "Pneumothorax"
+    ],
+    "Consolidation": [
+        "Consolidation"
+    ],
+    "Edema": [
+        "Edema"
+    ],
+    "Emphysema": [
+        "Emphysema"
+    ],
+    "Fibrosis": [
+        "Fibrosis"
+    ],
+    "Pleural_Thickening": [
+        "Pleural_Thickening"
+    ],
+    "Hernia": [
+        "Hernia"
+    ]
+}

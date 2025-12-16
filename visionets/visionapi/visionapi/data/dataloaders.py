@@ -26,7 +26,9 @@ def _load_pre_path(pre_path, idf):
     return pre
 
 
-def _setup_repeat_distributed_dataloader(dataset, num_repeats, batch_size):
+def _setup_repeat_distributed_dataloader(
+    dataset, num_repeats, batch_size, pin_memory, num_workers
+):
     """Creates distributed sampler and dataloader with repeated augmentation
 
     Args:
@@ -44,13 +46,13 @@ def _setup_repeat_distributed_dataloader(dataset, num_repeats, batch_size):
         batch_size=batch_size,
         sampler=sampler,
         drop_last=False,
-        pin_memory=False,
-        num_workers=0,
+        pin_memory=pin_memory,
+        num_workers=num_workers,
     )
     return data, sampler
 
 
-def _setup_distributed_dataloader(dataset, batch_size):
+def _setup_distributed_dataloader(dataset, batch_size, pin_memory, num_workers):
     """Creates distributed sampler and dataloader
 
     Args:
@@ -68,13 +70,13 @@ def _setup_distributed_dataloader(dataset, batch_size):
         batch_size=batch_size,
         sampler=sampler,
         drop_last=False,
-        pin_memory=False,
-        num_workers=0,
+        pin_memory=pin_memory,
+        num_workers=num_workers,
     )
     return data, sampler
 
 
-def _setup_dataloader(dataset, batch_size):
+def _setup_dataloader(dataset, batch_size, pin_memory, num_workers):
     """Creates simple dataloader
 
     Args:
@@ -89,8 +91,8 @@ def _setup_dataloader(dataset, batch_size):
         shuffle=False,
         batch_size=batch_size,
         drop_last=False,
-        pin_memory=False,
-        num_workers=0,
+        pin_memory=pin_memory,
+        num_workers=num_workers,
     )
     return data
 
@@ -152,6 +154,8 @@ def setup_complex_dataloader(
     datransforms,
     num_repeats,
     batch_size,
+    pin_memory,
+    num_workers,
 ):
     """Sets up complex dataloader for different training methodologies, such as
     semi-supervised learning, distillation or simple training. Serves as a wrapper
@@ -210,18 +214,32 @@ def setup_complex_dataloader(
     # Prepare distributed dataloader (repeat sampler if indicated)
     if num_repeats > 1:
         data, sampler = _setup_repeat_distributed_dataloader(
-            dataset=dataset, num_repeats=num_repeats, batch_size=batch_size
+            dataset=dataset,
+            num_repeats=num_repeats,
+            batch_size=batch_size,
+            pin_memory=pin_memory,
+            num_workers=num_workers,
         )
     else:
         data, sampler = _setup_distributed_dataloader(
-            dataset=dataset, batch_size=batch_size
+            dataset=dataset,
+            batch_size=batch_size,
+            pin_memory=pin_memory,
+            num_workers=num_workers,
         )
 
     return data, sampler, pw
 
 
 def setup_simple_dataloader(
-    img_path, label_path, idf_list, multigpu, datransforms, batch_size
+    img_path,
+    label_path,
+    idf_list,
+    multigpu,
+    datransforms,
+    batch_size,
+    pin_memory,
+    num_workers,
 ):
     """Sets up a simple dataloader that yields img + label. Several idfs can be loaded at the same time
 
@@ -255,16 +273,26 @@ def setup_simple_dataloader(
 
     # Set up multi-gpu
     if multigpu == 0:
-        data = _setup_dataloader(dataset=dataset, batch_size=batch_size)
+        data = _setup_dataloader(
+            dataset=dataset,
+            batch_size=batch_size,
+            pin_memory=pin_memory,
+            num_workers=num_workers,
+        )
         return data, None
     else:
         data, sampler = _setup_distributed_dataloader(
-            dataset=dataset, batch_size=batch_size
+            dataset=dataset,
+            batch_size=batch_size,
+            pin_memory=pin_memory,
+            num_workers=num_workers,
         )
         return data, sampler
 
 
-def setup_inference_dataloader(img_path, label_path, idf_list, batch_size):
+def setup_inference_dataloader(
+    img_path, label_path, idf_list, batch_size, num_workers=10
+):
     """Sets up a simple dataloader for inference (yields only images).
     Several idfs can be loaded at the same time
 
@@ -287,11 +315,13 @@ def setup_inference_dataloader(img_path, label_path, idf_list, batch_size):
 
     # Create dataloader and sampler
     dataset = InferenceChestDataset(img_path=img_path, paths=paths)
-    data = _setup_dataloader(dataset=dataset, batch_size=batch_size)
+    data = _setup_dataloader(
+        dataset=dataset, batch_size=batch_size, pin_memory=False, num_workers=num_workers
+    )
     return data
 
 
-def setup_inference_chexpert_dataloader(img_path, paths, batch_size):
+def setup_inference_chexpert_dataloader(img_path, paths, batch_size, num_workers=10):
     """Sets up an inference dataloader for inference (yields only images).
     Given root img path and individual path images in jpg or png format.
 
@@ -305,7 +335,9 @@ def setup_inference_chexpert_dataloader(img_path, paths, batch_size):
     """
 
     dataset = InferenceChestDataset(img_path=img_path, paths=paths)
-    data = _setup_dataloader(dataset=dataset, batch_size=batch_size)
+    data = _setup_dataloader(
+        dataset=dataset, batch_size=batch_size, pin_memory=False, num_workers=num_workers
+    )
     return data
 
 
@@ -318,6 +350,8 @@ def setup_alpha_dataloader(
     datransforms,
     batch_size,
     prev_alpha,
+    pin_memory,
+    num_workers,
 ):
     """Sets up and resets dataloader with origin dataset and destination dataset
     in active learning scenario. Random samples are selected from origin dataset
@@ -354,7 +388,10 @@ def setup_alpha_dataloader(
         img_path=img_path, label=label, paths=paths, datransforms=datransforms
     )
     data, sampler = _setup_distributed_dataloader(
-        dataset=dataset, batch_size=batch_size
+        dataset=dataset,
+        batch_size=batch_size,
+        pin_memory=pin_memory,
+        num_workers=num_workers,
     )
 
     return data, sampler
