@@ -1,0 +1,40 @@
+version: "3"
+
+services:
+  triton:
+    image: triton-inference:1.0
+    container_name: triton-inference-server
+    env_file:
+      - .env
+    restart: on-failure:3
+    network_mode: host
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+    ports:
+      - "8000:8000"
+      - "8001:8001"
+      - "8002:8002"
+    volumes:
+      - ./Triton/models-repository:/models
+    depends_on:
+      - db
+    links:
+      - db
+
+  db:
+    image: mysql:8
+    container_name: application-db
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+    environment:
+      - MYSQL_ROOT_PASSWORD="${MYSQL_ROOT_PASSWORD}"
+    volumes:
+      - db_vol:/var/lib/mysql
+
+volumes:
+  db_vol:
+    

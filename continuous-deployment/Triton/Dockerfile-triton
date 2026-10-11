@@ -1,0 +1,12 @@
+FROM nvcr.io/nvidia/tritonserver:22.03-py3
+
+WORKDIR /app
+COPY TLS/ ./certs/
+COPY launchTritonAndMiddleware.sh .
+
+COPY PythonMiddleware/requirements.txt .
+RUN python3 -m pip install -r requirements.txt
+COPY PythonMiddleware/ ./PythonMiddleware/
+
+ENTRYPOINT [ "/bin/bash" ]
+CMD ["/app/launchTritonAndMiddleware.sh"]

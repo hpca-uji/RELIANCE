@@ -1,0 +1,12 @@
+{
+    "Predictions": [
+        "Lung: 0.6869889497756958",
+        "Calcification: 0.03387346863746643",
+        "Foreign body: 0.03740495443344116",
+        "Mediastinum and pulmonary hila: 0.22372493147850037",
+        "Pleura: 0.119720458984375",
+        "Diaphragm: 0.012569427490234375",
+        "Thoracic wall: 0.10419803857803345",
+        "Pathologic: 0.8683622479438782"
+    ]
+}
