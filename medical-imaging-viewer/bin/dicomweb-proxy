@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+"use strict";
+
+const os = require('os');
+
+var spawn = require('child_process').spawn;
+console.log('starting dicomweb-proxy...');
+
+process.chdir('./node_modules/dicomweb-proxy');
+
+if (os.platform() === 'win32') {
+  var cmd = 'npm.cmd'
+} else {
+  var cmd = 'npm'
+}
+
+spawn('npx.cmd', [ 'ts-node', 'src/app.ts'], {stdio: 'inherit'});
+

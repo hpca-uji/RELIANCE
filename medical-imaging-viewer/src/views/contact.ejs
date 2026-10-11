@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="/includes/css/contact.css">
+</head>
+
+<body>
+    <%- include('./partials/header', {returnPage: '/login'}); %>
+    <% if( typeof(error) != "undefined" || typeof(msg) != "undefined") { %>
+        <%- include('./partials/alerts'); %>
+    <% } %>
+
+    <div class="container">
+    <div class="form-container">
+    <form action="/contact" method="POST">
+        <label for="fname">Username</label>
+        <input type="text" id="fname" name="username" placeholder="Username..." required>
+
+        <label for="lname">Email address</label>
+        <input type="text" id="lname" name="email" placeholder="ejemplo@ejemplo.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="ejemplo@ejemplo.com" required>
+
+        <label for="subject">Message</label>
+        <textarea id="subject" name="subject" placeholder="Enter your message..." style="height:200px" minlength="4" required></textarea>
+
+        <div class="submit-area">
+            <button type="submit">Send</button>
+        </div>
+    </form>
+    </div>
+    </div>
+    <%- include('./partials/footer'); %>
+</body>
+<script src="/includes/js/contact.js"></script>
+</html>

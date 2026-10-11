@@ -1,0 +1,38 @@
+{
+  "source": {
+    "aet": "VIEWER_CLIENT",
+    "ip": "0.0.0.0",
+    "port": 11113
+  },
+  "peers": [
+    {
+      "aet": "<PACS_AE_TITLE>",
+      "ip": "<PACS_HOST>",
+      "port": 104,
+      "db": {
+        "host": "<DB_HOST>",
+        "port": 3306,
+        "user": "<DB_USER>",
+        "pwd": "<DB_PASSWORD>",
+        "db-name": "app_db"
+      }
+    }
+  ],
+  "transferSyntax": "1.2.840.10008.1.2",
+  "mimeType": "image/dicom+jpeg",
+  "lossyQuality": 60,
+  "logDir": "./logs",
+  "storagePath": "./data",
+  "cacheRetentionMinutes": 30,
+  "webserverPort": 443,
+  "useCget": false,
+  "useFetchLevel": "IMAGE",
+  "maxAssociations": 4,
+  "qidoMinChars": 0,
+  "qidoAppendWildcard": true,
+  "verboseLogging": false,
+  "fullMeta": true,
+  "websocketUrl": "",
+  "websocketToken":
+    "<GENERATE_A_UNIQUE_RANDOM_WEBSOCKET_TOKEN>"
+}

@@ -1,0 +1,37 @@
+.topnav {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #151A1F;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .topnav-right {
+    width: 100%;
+  }
+  .topnav-right img {
+    float: right;
+    padding: 1px;
+  }
+
+  .topnav-center {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  input[type=button] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=button]:hover {
+    background-color: #45a049;
+  }

@@ -1,0 +1,17 @@
+<header>
+  <link
+    type="text/css"
+    href="/includes/css/header.css"
+    rel="stylesheet">
+
+  <div class="topnav">
+    <% if( typeof(returnPage) != "undefined") {%>
+      <div class='topnav-left'>
+        <input class='topnav-left-input' type="button" onclick="location.href='/login';" value="Home" />
+      </div>
+    <% } %>
+    <div class='topnav-center'>
+      <a class='img-link' href="/login">Medical Imaging Viewer</a>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/includes/css/login.css" />
+  </head>
+
+  <body>
+    <%- include('./partials/header'); %>
+    <% if( typeof(error) != "undefined" || typeof(msg) != "undefined") { %>
+      <%- include('./partials/alerts'); %>
+    <% } %>
+    
+    <div class="body-wrapper">
+      <div class="background-image">
+        <div class="login-wrapper">
+          <form class="login-form" action="/login" method="post">
+            <span class="login-form-title">
+              Log in
+            </span>
+            <div class="form-wrapper-input">
+              <input
+                class="form-input"
+                id="usrInput1"
+                type="text"
+                name="username"
+                placeholder="Username"
+                required>
+              <span class="form-focus-input img-icon centered" style="--bg-icon: url('../icons/person_white_24dp.svg')"></span>
+            </div>
+            <div class="form-wrapper-input">
+              <input
+                autocomplete="current-password"
+                id="current-password"
+                class="form-input"
+                type="password"
+                name="password"
+                placeholder="Password"
+                required>
+              <span class="form-focus-input" style="--bg-icon: url('../icons/lock_white_24dp.svg')"></span>
+            </div>
+            <div class="form-checkbox">
+              <input
+                class="form-input-checkbox"
+                id="ckb1"
+                type="checkbox"
+                name="remember-me"
+                value="lsRememberMe">
+              <label
+                class="form-label-checkbox"
+                for="ckb1"
+                style="--bg-icon: url('../icons/done_black_18dp.svg')">
+                Remember me
+              </label>
+            </div>
+            <div class="form-container-btn-login">
+              <button class="form-btn-login" onclick="lsRememberMe()">
+                Sign in
+              </button>
+            </div>
+            <div class="container-forgot-password">
+              <a class="forgot-password" href="./contact">
+                Forgot your password?
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+      <%- include('./partials/footer'); %>
+  </body>
+  <script src="/includes/js/login.js"></script>
+</html>

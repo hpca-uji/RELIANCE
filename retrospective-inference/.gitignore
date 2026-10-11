@@ -1,0 +1,11 @@
+# Ignore Python virtual environment and pycache in the backend
+/**/*-venv
+/**/__pycache__
+.env
+logs/
+dicoms/
+results/*.csv
+results/*.txt
+
+# Ignore IDE and editor-specific files
+.vscode/

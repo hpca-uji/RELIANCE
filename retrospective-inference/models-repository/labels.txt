@@ -1,0 +1,31 @@
+Lung#9#0.5
+Urgent lung finding#10#0.5
+Nodules#11#0.5
+Infiltrates#12#0.5
+Pneumonia#13#0.5
+Atelectasis#14#0.5
+Mediastinum and hila#15#0.5
+Urgent mediastinal or hilar finding#16#0.5
+Cardiomegaly#17#0.5
+Mediastinal widening#18#0.5
+Aortic elongation#19#0.5
+Hila#20#0.5
+Hilar enlargement#21#0.5
+Hiatal hernia#22#0.5
+Pleura, chest wall, or diaphragm#23#0.5
+Urgent pleural, chest wall, or diaphragmatic finding#24#0.5
+Pleural effusion#25#0.5
+Pneumothorax#26#0.5
+Costophrenic angle blunting#27#0.5
+Incidental finding#28#0.5
+Calcification#29#0.5
+Masses#30#0.5
+Foreign bodies#31#0.5
+Medical devices#32#0.5
+Tube#33#0.5
+Nasogastric tube#34#0.5
+Catheter#35#0.5
+Surgical change#36#0.5
+Pseudo-nodule#37#0.5
+Suboptimal study#38#0.5
+Normal#39#0.5
