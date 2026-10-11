@@ -1,0 +1,332 @@
+normal [counts:37895, 37895]\\
+exclude [counts:1401, 1401]\\
+suboptimal study [CUI:C2828075, counts:1814, 1814]\\
+radiological finding [CUI:C0436485, counts:0, 177306]\\
+├── unchanged [counts:10140, 10140]\\
+├── obesity [CUI:C0028754, counts:30, 30]\\
+├── chronic changes [CUI:C0742362, counts:4988, 4988]\\
+├── calcified densities [CUI:C2203586, counts:848, 4237]\\
+│   ├── calcified granuloma [CUI:C0333404, counts:2165, 2165]\\
+│   ├── calcified adenopathy [counts:434, 442]\\
+│   │   └── calcified mediastinal adenopathy [counts:8, 8]\\
+│   ├── calcified pleural thickening [counts:450, 450]\\
+│   ├── calcified pleural plaques [counts:160, 160]\\
+│   ├── heart valve calcified [CUI:C2073448, counts:129, 129]\\
+│   └── calcified fibroadenoma [counts:43, 43]\\
+├── granuloma [CUI:C0235557, counts:481, 2646]\\
+│   └── calcified granuloma [CUI:C0333404, counts:2165, 2165]\\
+├── end on vessel [counts:152, 152]\\
+├── adenopathy [CUI:C0478664, counts:349, 783]\\
+│   └── calcified adenopathy [counts:434, 434]\\
+├── nodule [CUI:C0034079, counts:2416, 2662]\\
+│   └── multiple nodules [CUI:C2073563, counts:246, 246]\\
+├── pseudonodule [counts:1478, 2519]\\
+│   ├── nipple shadow [counts:889, 889]\\
+│   └── end on vessel [counts:152, 152]\\
+├── abscess [CUI:C0024110, counts:7, 7]\\
+├── cyst [CUI:C2073485, counts:5, 5]\\
+├── cavitation [CUI:C0578537, counts:359, 359]\\
+├── fibrotic band [CUI:C0865843, counts:2432, 2432]\\
+├── volume loss [CUI:C3203358, counts:1710, 1710]\\
+├── hypoexpansion [counts:1053, 1053]\\
+├── bullas [CUI:C0241982, counts:418, 418]\\
+├── pneumothorax [CUI:C2073565, counts:411, 440]\\
+│   └── hydropneumothorax [CUI:C0020303, counts:29, 29]\\
+├── pneumoperitoneo [CUI:C0032320, counts:56, 56]\\
+├── pneumomediastinum [CUI:C2073636, counts:18, 18]\\
+├── subcutaneous emphysema [CUI:C0038536, counts:190, 190]\\
+├── hyperinflated lung [CUI:C0546312, counts:409, 409]\\
+├── flattened diaphragm [CUI:C2073504, counts:539, 539]\\
+├── lung vascular paucity [counts:108, 108]\\
+├── air trapping [CUI:C0231819, counts:3527, 3527]\\
+├── bronchiectasis [CUI:C0006267, counts:1588, 1588]\\
+├── infiltrates [CUI:C0277877, counts:5210, 19838]\\
+│   ├── interstitial pattern [CUI:C2073538, counts:6057, 6996]\\
+│   │   ├── ground glass pattern [CUI:C3544344, counts:212, 212]\\
+│   │   ├── reticular interstitial pattern [counts:427, 427]\\
+│   │   ├── reticulonodular interstitial pattern [CUI:C2073672, counts:175, 175]\\
+│   │   └── miliary opacities [CUI:C2073583, counts:125, 125]\\
+│   └── alveolar pattern [CUI:C1332240, counts:5382, 7632]\\
+│       ├── consolidation [CUI:C0521530, counts:1958, 2104]\\
+│       │   └── air bronchogram [CUI:C3669021, counts:146, 146]\\
+│       └── air bronchogram [CUI:C3669021, counts:146, 146]\\
+├── bronchovascular markings [CUI:C2073518, counts:954, 954]\\
+├── air fluid level [CUI:C0740844, counts:109, 109]\\
+├── increased density [CUI:C1443940, counts:1850, 1850]\\
+├── atelectasis [CUI:C0004144, counts:2666, 6954]\\
+│   ├── total atelectasis [CUI:C0264497, counts:24, 24]\\
+│   ├── lobar atelectasis [counts:596, 596]\\
+│   ├── segmental atelectasis [counts:104, 104]\\
+│   ├── laminar atelectasis [counts:3525, 3525]\\
+│   ├── round atelectasis [CUI:C2062952, counts:3, 3]\\
+│   └── atelectasis basal [CUI:C0746053, counts:36, 36]\\
+├── mediastinal shift [CUI:C0264576, counts:39, 39]\\
+├── azygos lobe [CUI:C0265794, counts:327, 327]\\
+├── fissure thickening [counts:162, 620]\\
+│   ├── minor fissure thickening [counts:342, 342]\\
+│   ├── major fissure thickening [counts:30, 30]\\
+│   └── loculated fissural effusion [counts:86, 86]\\
+├── pleural thickening [CUI:C0264545, counts:677, 3565]\\
+│   ├── apical pleural thickening [counts:2438, 2438]\\
+│   └── calcified pleural thickening [counts:450, 450]\\
+├── pleural plaques [CUI:C0340030, counts:15, 175]\\
+│   └── calcified pleural plaques [counts:160, 160]\\
+├── pleural effusion [CUI:C2073625, counts:8282, 8585]\\
+│   ├── loculated pleural effusion [CUI:C0747639, counts:184, 184]\\
+│   ├── loculated fissural effusion [counts:86, 86]\\
+│   ├── hydropneumothorax [CUI:C0020303, counts:29, 29]\\
+│   ├── empyema [CUI:C0014009, counts:4, 4]\\
+│   └── hemothorax [CUI:C0019123, counts:0, 0]\\
+├── pleural mass [CUI:C1709576, counts:1, 1]\\
+├── costophrenic angle blunting [CUI:C0742855, counts:4542, 4542]\\
+├── vascular redistribution [CUI:C0239041, counts:367, 499]\\
+│   └── central vascular redistribution [counts:132, 132]\\
+├── hilar enlargement [CUI:C1698506, counts:1169, 4893]\\
+│   ├── adenopathy [CUI:C0149711, counts:349, 349]\\
+│   └── vascular hilar enlargement [counts:3192, 3375]\\
+│       └── pulmonary artery enlargement [CUI:C2072932, counts:183, 183]\\
+├── hilar congestion [CUI:C0582411, counts:1047, 1047]\\
+├── cardiomegaly [CUI:C0018800, counts:10527, 10527]\\
+├── pericardial effusion [CUI:C0031039, counts:56, 56]\\
+├── kerley lines [CUI:C0239019, counts:69, 69]\\
+├── dextrocardia [CUI:C0011813, counts:14, 14]\\
+├── right sided aortic arch [CUI:C0035615, counts:18, 18]\\
+├── aortic atheromatosis [CUI:C1096249, counts:1813, 1813]\\
+├── aortic elongation [counts:7723, 10153]\\
+│   ├── descendent aortic elongation [CUI:C4476542, counts:736, 736]\\
+│   ├── ascendent aortic elongation [CUI:C3889085, counts:154, 154]\\
+│   ├── aortic button enlargement [CUI:C1851119, counts:368, 368]\\
+│   └── supra aortic elongation [counts:1172, 1172]\\
+├── aortic aneurysm [CUI:C0003486, counts:32, 32]\\
+├── mediastinal enlargement [CUI:C2021206, counts:272, 5524]\\
+│   ├── superior mediastinal enlargement [CUI:C4273001, counts:608, 2478]\\
+│   │   ├── goiter [CUI:C0018021, counts:698, 698]\\
+│   │   └── supra aortic elongation [counts:1172, 1172]\\
+│   ├── descendent aortic elongation [CUI:C4476542, counts:736, 736]\\
+│   ├── ascendent aortic elongation [CUI:C3889085, counts:154, 154]\\
+│   ├── aortic aneurysm [CUI:C0003486, counts:32, 32]\\
+│   ├── mediastinal mass [CUI:C0240318, counts:198, 198]\\
+│   └── hiatal hernia [CUI:C3489393, counts:1654, 1654]\\
+├── tracheal shift [counts:591, 591]\\
+├── mass [CUI:C2603353, counts:37, 867]\\
+│   ├── mediastinal mass [CUI:C0240318, counts:198, 198]\\
+│   ├── breast mass [CUI:C0024103, counts:1, 1]\\
+│   ├── pleural mass [CUI:C1709576, counts:1, 1]\\
+│   ├── pulmonary mass [CUI:C0149726, counts:547, 547]\\
+│   └── soft tissue mass [CUI:C0457196, counts:83, 83]\\
+├── esophagic dilatation [CUI:C0192389, counts:3, 3]\\
+├── azygoesophageal recess shift [counts:47, 47]\\
+├── pericardial effusion [CUI:C0031039, counts:56, 56]\\
+├── mediastinic lipomatosis [CUI:C1333298, counts:288, 288]\\
+├── thoracic cage deformation [CUI:C4538889, counts:166, 8702]\\
+│   ├── scoliosis [CUI:C0036439, counts:5610, 5610]\\
+│   ├── kyphosis [CUI:C2115817, counts:2631, 2631]\\
+│   ├── pectum excavatum [CUI:C2051831, counts:185, 185]\\
+│   ├── pectum carinatum [CUI:C2939416, counts:30, 30]\\
+│   └── cervical rib [CUI:C0158779, counts:80, 80]\\
+├── vertebral degenerative changes [CUI:C4290224, counts:2974, 4298]\\
+│   └── vertebral compression [CUI:C0262431, counts:236, 1324]\\
+│       └── vertebral anterior compression [counts:1088, 1088]\\
+├── lytic bone lesion [CUI:C0476382, counts:55, 55]\\
+├── sclerotic bone lesion [CUI:C4315325, counts:397, 450]\\
+│   └── blastic bone lesion [CUI:C2203581, counts:53, 53]\\
+├── costochondral junction hypertrophy [counts:98, 98]\\
+├── sternoclavicular junction hypertrophy [counts:5, 5]\\
+├── axial hyperostosis [CUI:C1400000, counts:184, 184]\\
+├── osteopenia [CUI:C0029453, counts:374, 374]\\
+├── osteoporosis [CUI:C0029456, counts:164, 164]\\
+├── non axial articular degenerative changes [counts:236, 236]\\
+├── subacromial space narrowing [counts:34, 34]\\
+├── fracture [CUI:C0016658, counts:14, 3366]\\
+│   ├── clavicle fracture [CUI:C0159658, counts:271, 271]\\
+│   ├── humeral fracture [CUI:C0020162, counts:285, 285]\\
+│   ├── vertebral fracture [CUI:C0080179, counts:190, 190]\\
+│   └── rib fracture [CUI:C0035522, counts:532, 2606]\\
+│       └── callus rib fracture [CUI:C0006767, counts:2074, 2074]\\
+├── gynecomastia [CUI:C0018418, counts:445, 445]\\
+├── hiatal hernia [CUI:C3489393, counts:1654, 1654]\\
+├── Chilaiditi sign [CUI:C3178780, counts:14, 14]\\
+├── hemidiaphragm elevation [CUI:C2073707, counts:1701, 1701]\\
+├── diaphragmatic eventration [CUI:C0011981, counts:770, 770]\\
+├── tracheostomy tube [CUI:C0184159, counts:1839, 1839]\\
+├── endotracheal tube [CUI:C0336630, counts:2456, 2456]\\
+├── NSG tube [counts:5827, 5827]\\
+├── chest drain tube [CUI:C0008034, counts:607, 607]\\
+├── ventriculoperitoneal drain tube [CUI:C0162702, counts:33, 33]\\
+├── gastrostomy tube [CUI:C0150595, counts:9, 9]\\
+├── nephrostomy tube [CUI:C0184149, counts:3, 3]\\
+├── double J stent [CUI:C0441293, counts:11, 11]\\
+├── catheter [CUI:C0085590, counts:63, 6167]\\
+│   └── central venous catheter [CUI:C1145640, counts:444, 6104]\\
+│       ├── central venous catheter via subclavian vein [CUI:C0398281, counts:1712, 1712]\\
+│       ├── central venous catheter via jugular vein [CUI:C0398278, counts:3299, 3299]\\
+│       ├── reservoir central venous catheter [CUI:C2026143, counts:466, 466]\\
+│       └── central venous catheter via umbilical vein [CUI:C0398284, counts:183, 183]\\
+├── electrical device [counts:26, 4286]\\
+│   ├── dual chamber device [CUI:C2732817, counts:955, 955]\\
+│   ├── single chamber device [CUI:C2733312, counts:529, 529]\\
+│   ├── pacemaker [CUI:C0030163, counts:2614, 2614]\\
+│   └── dai [CUI:C0972395, counts:162, 162]\\
+├── artificial heart valve [CUI:C1399223, counts:488, 992]\\
+│   ├── artificial mitral heart valve [CUI:C0869752, counts:299, 299]\\
+│   └── artificial aortic heart valve [CUI:C0869748, counts:205, 205]\\
+├── surgery [counts:161, 7371]\\
+│   ├── metal [CUI:C0025552, counts:1113, 5225]\\
+│   │   ├── osteosynthesis material [CUI:C0016642, counts:530, 530]\\
+│   │   ├── sternotomy [CUI:C0185792, counts:2056, 2056]\\
+│   │   └── suture material [CUI:C4305366, counts:1526, 1526]\\
+│   ├── bone cement [CUI:C0005934, counts:8, 8]\\
+│   ├── prosthesis [CUI:C0175649, counts:17, 566]\\
+│   │   ├── humeral prosthesis [CUI:C0745058, counts:117, 117]\\
+│   │   ├── mammary prosthesis [CUI:C0917968, counts:382, 382]\\
+│   │   └── endoprosthesis [CUI:C0005846, counts:19, 50]\\
+│   │       └── aortic endoprosthesis [counts:31, 31]\\
+│   ├── surgery breast [CUI:C3714726, counts:278, 729]\\
+│   │   └── mastectomy [CUI:C0024881, counts:451, 451]\\
+│   ├── surgery neck [CUI:C0185773, counts:442, 442]\\
+│   ├── surgery lung [CUI:C0038903, counts:213, 213]\\
+│   ├── surgery heart [CUI:C0018821, counts:14, 14]\\
+│   └── surgery humeral [CUI:C0186326, counts:13, 13]\\
+├── abnormal foreign body [CUI:C0016542, counts:49, 49]\\
+└── external foreign body [counts:34, 34]\\
+differential diagnosis [counts:0, 27718]\\
+├── pneumonia [CUI:C0032285, counts:5776, 5932]\\
+│   └── atypical pneumonia [CUI:C1412002, counts:156, 156]\\
+├── tuberculosis [CUI:C0041296, counts:174, 822]\\
+│   └── tuberculosis sequelae [CUI:C0494132, counts:648, 648]\\
+├── lung metastasis [CUI:C0153676, counts:250, 250]\\
+├── lymphangitis carcinomatosa [CUI:C0238258, counts:29, 29]\\
+├── lepidic adenocarcinoma [CUI:C4049711, counts:10, 10]\\
+├── pulmonary fibrosis [CUI:C0034069, counts:751, 991]\\
+│   ├── post radiotherapy changes [CUI:C1320687, counts:196, 196]\\
+│   └── asbestosis signs [CUI:C0003949, counts:44, 44]\\
+├── emphysema [CUI:C0034067, counts:958, 958]\\
+├── COPD signs [CUI:C0024117, counts:14557, 14557]\\
+├── heart insufficiency [CUI:C0018801, counts:2339, 2339]\\
+├── respiratory distress [CUI:C0476273, counts:53, 53]\\
+├── pulmonary hypertension [CUI:C0020542, counts:95, 129]\\
+│   ├── pulmonary artery hypertension [CUI:C2973725, counts:28, 28]\\
+│   └── pulmonary venous hypertension [CUI:C4477098, counts:6, 6]\\
+├── pulmonary edema [CUI:C0034063, counts:1515, 1515]\\
+└── bone metastasis [CUI:C0153690, counts:133, 133]\\
+localization [counts:0, 246212]\\
+├── extracorporal [CUI:C0424529, counts:0, 0]\\
+├── cervical [CUI:C0920882, counts:989, 989]\\
+├── soft tissue [CUI:C0225317, counts:406, 3532]\\
+│   ├── subcutaneous [CUI:C0443315, counts:328, 328]\\
+│   ├── axilar [CUI:C0004454, counts:858, 858]\\
+│   └── pectoral [CUI:C0230111, counts:1078, 1940]\\
+│       └── nipple [CUI:C0028109, counts:862, 862]\\
+├── bone [CUI:C0262950, counts:1443, 12697]\\
+│   ├── shoulder [CUI:C0037004, counts:287, 2132]\\
+│   │   ├── acromioclavicular joint [CUI:C0001208, counts:68, 68]\\
+│   │   ├── rotator cuff [CUI:C0085515, counts:67, 67]\\
+│   │   ├── supraspisnous [CUI:C0225001, counts:43, 43]\\
+│   │   └── humerus [CUI:C0020164, counts:1040, 1667]\\
+│   │       ├── humeral head [CUI:C0223683, counts:426, 426]\\
+│   │       ├── humeral neck [CUI:C0448034, counts:88, 88]\\
+│   │       └── glenohumeral joint [CUI:C0225063, counts:113, 113]\\
+│   ├── clavicle [CUI:C0008913, counts:387, 387]\\
+│   ├── scapula [CUI:C0036277, counts:170, 170]\\
+│   ├── costoesternal [CUI:C0450216, counts:36, 36]\\
+│   ├── column [CUI:C0037949, counts:1421, 3757]\\
+│   │   ├── intersomatic space [CUI:C0223088, counts:52, 52]\\
+│   │   ├── dorsal vertebrae [CUI:C0039987, counts:1963, 1963]\\
+│   │   ├── cervical vertebrae [CUI:C3665420, counts:100, 100]\\
+│   │   └── paravertebral [CUI:C0442150, counts:221, 221]\\
+│   └── rib [CUI:C0035561, counts:3674, 4772]\\
+│       ├── anterior rib [CUI:C4323264, counts:317, 317]\\
+│       ├── posterior rib [CUI:C4323265, counts:745, 745]\\
+│       └── rib cartilage [CUI:C0222787, counts:36, 36]\\
+├── hemithorax [CUI:C0934569, counts:4994, 4994]\\
+├── extrapleural [CUI:C0442091, counts:70, 70]\\
+├── extrapulmonary [counts:46, 46]\\
+├── pleural [CUI:C0032225, counts:13708, 13708]\\
+├── subpleural [CUI:C0225775, counts:115, 115]\\
+├── fissure [CUI:C0458078, counts:731, 1314]\\
+│   ├── minor fissure [CUI:C0734040, counts:485, 485]\\
+│   └── major fissure [CUI:C4253583, counts:98, 98]\\
+├── lobar [CUI:C0225752, counts:2401, 14757]\\
+│   ├── upper lobe [CUI:C0225756, counts:1217, 6650]\\
+│   │   ├── left upper lobe [CUI:C1261076, counts:1543, 2444]\\
+│   │   │   └── lingula [CUI:C0225740, counts:901, 901]\\
+│   │   └── right upper lobe [CUI:C1261074, counts:2989, 2989]\\
+│   ├── lower lobe [CUI:C0225758, counts:790, 4122]\\
+│   │   ├── left lower lobe [CUI:C1261077, counts:1985, 1985]\\
+│   │   └── right lower lobe [CUI:C1261075, counts:1347, 1347]\\
+│   └── middle lobe [CUI:C4281590, counts:1584, 1584]\\
+├── subsegmental [CUI:C0929165, counts:1843, 1843]\\
+├── bronchi [CUI:C0006255, counts:3291, 3291]\\
+├── peribronchi [CUI:C0225607, counts:114, 114]\\
+├── lung field [CUI:C0225759, counts:806, 78096]\\
+│   ├── pleural [CUI:C0032225, counts:13708, 13708]\\
+│   ├── subpleural [CUI:C0225775, counts:115, 115]\\
+│   ├── major fissure [CUI:C4253583, counts:98, 98]\\
+│   ├── subsegmental [CUI:C0929165, counts:1843, 1843]\\
+│   ├── bronchi [CUI:C0006255, counts:3291, 3291]\\
+│   ├── peribronchi [CUI:C0225607, counts:114, 114]\\
+│   ├── upper lung field [CUI:C0929227, counts:493, 10322]\\
+│   │   └── upper lobe [CUI:C0225756, counts:1217, 9829]\\
+│   │       ├── left upper lobe [CUI:C1261076, counts:1543, 1543]\\
+│   │       ├── right upper lobe [CUI:C1261074, counts:2989, 2989]\\
+│   │       ├── apical [CUI:C0734296, counts:3838, 3838]\\
+│   │       └── suprahilar [CUI:C0934260, counts:242, 242]\\
+│   ├── middle lung field [CUI:C0929434, counts:1576, 13439]\\
+│   │   ├── aortopulmonary window [CUI:C1282038, counts:110, 110]\\
+│   │   ├── hilar [CUI:C0205150, counts:6616, 11268]\\
+│   │   │   ├── pulmonary artery [CUI:C0034052, counts:215, 215]\\
+│   │   │   ├── hilar bilateral [counts:687, 687]\\
+│   │   │   └── perihilar [CUI:C0225702, counts:3750, 3750]\\
+│   │   └── minor fissure [CUI:C0734040, counts:485, 485]\\
+│   └── lower lung field [counts:1345, 34360]\\
+│       ├── basal [CUI:C1282378, counts:9420, 9420]\\
+│       ├── lower lobe [CUI:C0225758, counts:790, 4122]\\
+│       │   ├── left lower lobe [CUI:C1261077, counts:1985, 1985]\\
+│       │   └── right lower lobe [CUI:C1261075, counts:1347, 1347]\\
+│       ├── middle lobe [CUI:C4281590, counts:1584, 1584]\\
+│       ├── infrahilar [counts:672, 672]\\
+│       ├── lingula [CUI:C0225740, counts:901, 901]\\
+│       ├── supradiaphragm [counts:19, 19]\\
+│       ├── diaphragm [CUI:C0011980, counts:3777, 3777]\\
+│       ├── infradiaphragm [counts:2932, 2932]\\
+│       ├── cardiophrenic angle [counts:286, 286]\\
+│       └── costophrenic angle [CUI:C0230151, counts:5784, 9302]\\
+│           ├── right costophrenic angle [CUI:C0504099, counts:1441, 1441]\\
+│           ├── left costophrenic angle [CUI:C0504100, counts:2016, 2016]\\
+│           └── bilateral costophrenic angle [counts:61, 61]\\
+├── central [CUI:C0205099, counts:5475, 5475]\\
+├── mediastinum [CUI:C0025066, counts:2636, 38881]\\
+│   ├── superior mediastinum [CUI:C0230147, counts:641, 8432]\\
+│   │   ├── carotid artery [CUI:C0007272, counts:4, 4]\\
+│   │   ├── brachiocephalic veins [CUI:C0006095, counts:202, 202]\\
+│   │   ├── supra aortic [counts:1122, 1122]\\
+│   │   ├── aortic button [CUI:C0003489, counts:347, 347]\\
+│   │   ├── superior cave vein [CUI:C3165182, counts:3659, 3659]\\
+│   │   └── subclavian vein [CUI:C0038532, counts:2457, 2457]\\
+│   ├── lower mediastinum [CUI:C1261193, counts:184, 18357]\\
+│   │   ├── anterior mediastinum [CUI:C0230148, counts:62, 160]\\
+│   │   │   └── thymus [CUI:C0040113, counts:98, 98]\\
+│   │   ├── middle mediastinum [CUI:C0230149, counts:31, 15625]\\
+│   │   │   └── cardiac [CUI:C1522601, counts:15549, 15594]\\
+│   │   │       └── coronary [CUI:C1522318, counts:45, 45]\\
+│   │   └── posterior mediastinum [CUI:C0230150, counts:15, 2388]\\
+│   │       └── retrocardiac [counts:2373, 2373]\\
+│   └── aortic [CUI:C0003483, counts:9456, 9456]\\
+├── paratracheal [CUI:C0442143, counts:466, 466]\\
+├── airways [CUI:C0458827, counts:16, 8640]\\
+│   ├── tracheal [CUI:C0040578, counts:5333, 5333]\\
+│   └── bronchi [CUI:C0006255, counts:3291, 3291]\\
+├── esophageal [CUI:C1522619, counts:238, 238]\\
+├── paramediastinum [counts:68, 68]\\
+├── paracardiac [counts:186, 186]\\
+├── epigastric [counts:42, 42]\\
+├── gastric chamber [CUI:C3714551, counts:887, 887]\\
+├── hypochondrium [CUI:C0230186, counts:192, 454]\\
+│   ├── right hypochondrium [CUI:C0738590, counts:122, 196]\\
+│   │   └── gallbladder [CUI:C0016976, counts:74, 74]\\
+│   └── left hypochondrium [CUI:C0738591, counts:66, 66]\\
+├── right [CUI:C0444532, counts:22795, 22795]\\
+├── left [CUI:C0443246, counts:16686, 16686]\\
+└── bilateral [CUI:C0238767, counts:10890, 15828]\\
+    ├── diffuse bilateral [counts:1635, 1635]\\
+    └── basal bilateral [counts:3303, 3303]\\

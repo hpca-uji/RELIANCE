@@ -1,0 +1,16 @@
+[
+    "Lung",
+    "Lung-urgent",
+    "Pneumonia",
+    "Infiltrates",
+    "Atelectasis",
+    "MH",
+    "MH-urgent",
+    "Cardiomegaly",
+    "PDTW",
+    "PDTW-urgent",
+    "Pleural effusion",
+    "Pneumothorax",
+    "Foreign bodies",
+    "Normal"
+]

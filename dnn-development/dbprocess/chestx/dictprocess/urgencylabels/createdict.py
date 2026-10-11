@@ -1,0 +1,23 @@
+import json
+
+"""Assignation of chestxray14 labels to our database"""
+
+fullassigns = {
+    "Atelectasis": ["Atelectasis", "Lung-urgent", "Lung"],
+    "Cardiomegaly": ["Cardiomegaly", "MH-urgent", "MH"],
+    "Effusion": ["Pleural effusion", "PDTW-urgent", "PDTW"],
+    "Infiltration": ["Infiltrates", "Lung-urgent", "Lung"],
+    "Mass": ["Mass"],
+    "Nodule": ["Nodules / Multiple nodules", "Lung-urgent", "Lung"],
+    "Pneumonia": ["Pneumonia", "Lung-urgent", "Lung"],
+    "Pneumothorax": ["Pneumothorax", "PDTW-urgent", "PDTW"],
+    "Consolidation": ["Infiltrates", "Lung-urgent", "Lung"],
+    "Edema": ["Lung-urgent", "Lung"],
+    "Emphysema": ["COPD / Emphysema", "Lung"],
+    "Fibrosis": ["Lung-urgent", "Lung"],
+    "Pleural_Thickening": ["PDTW-incidental", "PDTW"],
+    "Hernia": ["Hiatal hernia", "PDTW"],
+}
+
+with open("fullassigns.json", "w") as json_file:
+    json.dump(fullassigns, json_file)

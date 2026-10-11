@@ -1,0 +1,392 @@
+
+chestxPKT/: 112120 counts
+
+UNK_GENDER: 0
+UNK_AGE: 0
+UNDER_AGE: 4076
+total: 112120 counts
+Atelectasis           11559
+Cardiomegaly           2776
+Effusion              13317
+Infiltration          19894
+Mass                   5782
+Nodule                 6331
+Pneumonia              1431
+Pneumothorax           5302
+Consolidation          4667
+Edema                  2303
+Emphysema              2516
+Fibrosis               1686
+Pleural_Thickening     3385
+Hernia                  227
+No Finding            60361
+dtype: int64
+
+PA: 67310 counts
+Atelectasis            5728
+Cardiomegaly           1563
+Effusion               6589
+Infiltration           9353
+Mass                   3567
+Nodule                 4177
+Pneumonia               630
+Pneumothorax           3407
+Consolidation          1521
+Edema                   276
+Emphysema              1499
+Fibrosis               1408
+Pleural_Thickening     2418
+Hernia                  192
+No Finding            39302
+dtype: int64
+
+AP: 44810 counts
+Atelectasis            5831
+Cardiomegaly           1213
+Effusion               6728
+Infiltration          10541
+Mass                   2215
+Nodule                 2154
+Pneumonia               801
+Pneumothorax           1895
+Consolidation          3146
+Edema                  2027
+Emphysema              1017
+Fibrosis                278
+Pleural_Thickening      967
+Hernia                   35
+No Finding            21059
+dtype: int64
+
+F: 48780 counts
+Atelectasis            4653
+Cardiomegaly           1469
+Effusion               5882
+Infiltration           8467
+Mass                   2253
+Nodule                 2646
+Pneumonia               593
+Pneumothorax           2585
+Consolidation          2001
+Edema                  1099
+Emphysema               906
+Fibrosis                771
+Pleural_Thickening     1343
+Hernia                  131
+No Finding            26439
+dtype: int64
+
+M: 63340 counts
+Atelectasis            6906
+Cardiomegaly           1307
+Effusion               7435
+Infiltration          11427
+Mass                   3529
+Nodule                 3685
+Pneumonia               838
+Pneumothorax           2717
+Consolidation          2666
+Edema                  1204
+Emphysema              1610
+Fibrosis                915
+Pleural_Thickening     2042
+Hernia                   96
+No Finding            33922
+dtype: int64
+
+padchest counts: 0
+chestx counts: 112120
+
+tr: 77763 counts
+
+UNK_GENDER: 0
+UNK_AGE: 0
+UNDER_AGE: 3009
+total: 77763 counts
+Atelectasis            7433
+Cardiomegaly           1558
+Effusion               7783
+Infiltration          12378
+Mass                   3646
+Nodule                 4228
+Pneumonia               784
+Pneumothorax           2400
+Consolidation          2555
+Edema                  1233
+Emphysema              1286
+Fibrosis               1129
+Pleural_Thickening     2021
+Hernia                  126
+No Finding            45392
+dtype: int64
+
+PA: 50558 counts
+Atelectasis            3934
+Cardiomegaly           1036
+Effusion               4336
+Infiltration           6911
+Mass                   2364
+Nodule                 2972
+Pneumonia               415
+Pneumothorax           1695
+Consolidation          1019
+Edema                   179
+Emphysema               785
+Fibrosis                994
+Pleural_Thickening     1563
+Hernia                  109
+No Finding            31038
+dtype: int64
+
+AP: 27205 counts
+Atelectasis            3499
+Cardiomegaly            522
+Effusion               3447
+Infiltration           5467
+Mass                   1282
+Nodule                 1256
+Pneumonia               369
+Pneumothorax            705
+Consolidation          1536
+Edema                  1054
+Emphysema               501
+Fibrosis                135
+Pleural_Thickening      458
+Hernia                   17
+No Finding            14354
+dtype: int64
+
+F: 34237 counts
+Atelectasis            2969
+Cardiomegaly            876
+Effusion               3575
+Infiltration           5409
+Mass                   1388
+Nodule                 1745
+Pneumonia               333
+Pneumothorax           1235
+Consolidation          1118
+Edema                   614
+Emphysema               481
+Fibrosis                530
+Pleural_Thickening      795
+Hernia                   77
+No Finding            20008
+dtype: int64
+
+M: 43526 counts
+Atelectasis            4464
+Cardiomegaly            682
+Effusion               4208
+Infiltration           6969
+Mass                   2258
+Nodule                 2483
+Pneumonia               451
+Pneumothorax           1165
+Consolidation          1437
+Edema                   619
+Emphysema               805
+Fibrosis                599
+Pleural_Thickening     1226
+Hernia                   49
+No Finding            25384
+dtype: int64
+
+padchest counts: 0
+chestx counts: 77763
+
+ts: 25596 counts
+
+UNK_GENDER: 0
+UNK_AGE: 0
+UNDER_AGE: 788
+total: 25596 counts
+Atelectasis           3279
+Cardiomegaly          1069
+Effusion              4658
+Infiltration          6112
+Mass                  1748
+Nodule                1623
+Pneumonia              555
+Pneumothorax          2665
+Consolidation         1815
+Edema                  925
+Emphysema             1093
+Fibrosis               435
+Pleural_Thickening    1143
+Hernia                  86
+No Finding            9861
+dtype: int64
+
+PA: 11096 counts
+Atelectasis           1361
+Cardiomegaly           427
+Effusion              1756
+Infiltration          1672
+Mass                   941
+Nodule                 873
+Pneumonia              162
+Pneumothorax          1551
+Consolidation          390
+Edema                   78
+Emphysema              625
+Fibrosis               313
+Pleural_Thickening     686
+Hernia                  71
+No Finding            4805
+dtype: int64
+
+AP: 14500 counts
+Atelectasis           1918
+Cardiomegaly           642
+Effusion              2902
+Infiltration          4440
+Mass                   807
+Nodule                 750
+Pneumonia              393
+Pneumothorax          1114
+Consolidation         1425
+Edema                  847
+Emphysema              468
+Fibrosis               122
+Pleural_Thickening     457
+Hernia                  15
+No Finding            5056
+dtype: int64
+
+F: 10714 counts
+Atelectasis           1363
+Cardiomegaly           528
+Effusion              1921
+Infiltration          2475
+Mass                   682
+Nodule                 692
+Pneumonia              221
+Pneumothorax          1231
+Consolidation          776
+Edema                  404
+Emphysema              381
+Fibrosis               184
+Pleural_Thickening     463
+Hernia                  45
+No Finding            4151
+dtype: int64
+
+M: 14882 counts
+Atelectasis           1916
+Cardiomegaly           541
+Effusion              2737
+Infiltration          3637
+Mass                  1066
+Nodule                 931
+Pneumonia              334
+Pneumothorax          1434
+Consolidation         1039
+Edema                  521
+Emphysema              712
+Fibrosis               251
+Pleural_Thickening     680
+Hernia                  41
+No Finding            5710
+dtype: int64
+
+padchest counts: 0
+chestx counts: 25596
+
+vl: 8761 counts
+
+UNK_GENDER: 0
+UNK_AGE: 0
+UNDER_AGE: 279
+total: 8761 counts
+Atelectasis            847
+Cardiomegaly           149
+Effusion               876
+Infiltration          1404
+Mass                   388
+Nodule                 480
+Pneumonia               92
+Pneumothorax           237
+Consolidation          297
+Edema                  145
+Emphysema              137
+Fibrosis               122
+Pleural_Thickening     221
+Hernia                  15
+No Finding            5108
+dtype: int64
+
+PA: 5656 counts
+Atelectasis            433
+Cardiomegaly           100
+Effusion               497
+Infiltration           770
+Mass                   262
+Nodule                 332
+Pneumonia               53
+Pneumothorax           161
+Consolidation          112
+Edema                   19
+Emphysema               89
+Fibrosis               101
+Pleural_Thickening     169
+Hernia                  12
+No Finding            3459
+dtype: int64
+
+AP: 3105 counts
+Atelectasis            414
+Cardiomegaly            49
+Effusion               379
+Infiltration           634
+Mass                   126
+Nodule                 148
+Pneumonia               39
+Pneumothorax            76
+Consolidation          185
+Edema                  126
+Emphysema               48
+Fibrosis                21
+Pleural_Thickening      52
+Hernia                   3
+No Finding            1649
+dtype: int64
+
+F: 3829 counts
+Atelectasis            321
+Cardiomegaly            65
+Effusion               386
+Infiltration           583
+Mass                   183
+Nodule                 209
+Pneumonia               39
+Pneumothorax           119
+Consolidation          107
+Edema                   81
+Emphysema               44
+Fibrosis                57
+Pleural_Thickening      85
+Hernia                   9
+No Finding            2280
+dtype: int64
+
+M: 4932 counts
+Atelectasis            526
+Cardiomegaly            84
+Effusion               490
+Infiltration           821
+Mass                   205
+Nodule                 271
+Pneumonia               53
+Pneumothorax           118
+Consolidation          190
+Edema                   64
+Emphysema               93
+Fibrosis                65
+Pleural_Thickening     136
+Hernia                   6
+No Finding            2828
+dtype: int64
+
+padchest counts: 0
+chestx counts: 8761
