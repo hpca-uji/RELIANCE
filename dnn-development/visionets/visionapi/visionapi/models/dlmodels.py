@@ -5,7 +5,7 @@ from ._dlgetters import get_fullmodel
 
 
 class ChestModel(nn.Module):
-    """RELIANCE Model and methods definitions"""
+    """Chest Model and methods definitions"""
 
     def __init__(
         self,
@@ -22,7 +22,7 @@ class ChestModel(nn.Module):
         num_label=32,
         hierarchy="none",
     ):
-        """Initilization function for reliance model
+        """Initilization function for chest model
 
         Args:
         pre: Preprocessing technique applied (convrand, convfixed, resize)

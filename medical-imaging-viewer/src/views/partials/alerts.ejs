@@ -1,16 +1,19 @@
-<link
-type="text/css"
-href="/includes/css/alerts.css"
-rel="stylesheet" />
-<% if( typeof(error) != "undefined") {%>
+<link type="text/css" href="/includes/css/alerts.css" rel="stylesheet" />
+<% if( typeof(error) !="undefined" ) {%>
     <div class="alert-error">
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-        <strong>Error!</strong><p><%= error %></p>
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Error!</strong>
+        <p>
+            <%= error %>
+        </p>
     </div>
-<% } %>
-<% if( typeof(msg) != "undefined") {%>
-    <div class="alert-msg">
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-        <strong>Listo.</strong><p><%= msg %></p> 
-    </div>
-<% } %>
+    <% } %>
+        <% if( typeof(msg) !="undefined" ) {%>
+            <div class="alert-msg">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <strong>Ready.</strong>
+                <p>
+                    <%= msg %>
+                </p>
+            </div>
+            <% } %>

@@ -3,7 +3,7 @@ import { fetchGet } from './fetchGet';
 import { fetchMove } from './fetchMove';
 import { ConfParams, config } from '../utils/config';
 import { getLockUid, QUERY_LEVEL } from './querLevel';
-import { Node as DicomNode } from 'reliance-dicom-dimse-native';
+import { Node as DicomNode } from 'dicom-dimse-native';
 import { FastifyBaseLogger } from 'fastify/types/logger';
 
 const maxAssociations = config.get(ConfParams.MAX_ASSOCIATIONS) as number;

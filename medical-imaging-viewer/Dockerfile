@@ -9,7 +9,7 @@ RUN apt-get install libwrap0
 
 # Update and set timezone to Madrid
 RUN apt-get install -yq tzdata && \
-    ln -fs /usr/share/zoneinfo/Europe/Madrid /etc/localtime && \
+    ln -fs /usr/share/zoneinfo/UTC /etc/localtime && \
     dpkg-reconfigure -f noninteractive tzdata
 
 # Set max space size in memory

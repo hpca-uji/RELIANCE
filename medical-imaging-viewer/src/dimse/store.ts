@@ -1,5 +1,5 @@
 import { ConfParams, config } from '../utils/config';
-import { startStoreScp, storeScpOptions, shutdownScu, shutdownScuOptions } from 'reliance-dicom-dimse-native';
+import { startStoreScp, storeScpOptions, shutdownScu, shutdownScuOptions } from 'dicom-dimse-native';
 import { FastifyBaseLogger } from 'fastify/types/logger';
 
 export async function startScp(log: FastifyBaseLogger) {

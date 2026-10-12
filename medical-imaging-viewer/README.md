@@ -26,7 +26,7 @@ npm ci
 npm run build
 ```
 
-Modify: `config/config.env`, replace the placeholders in that file and in `config/default.json` and `config/default2.json` with deployment-specific settings. The database account must be provisioned separately. Set a unique random JWT secret and `websocketToken`; do not commit real credentials or tokens.
+Modify: `config/config.env`, replace the placeholders in that file and in `config/default.json` and `config/default2.json` with deployment-specific settings. The database account must be provisioned separately. Set a unique random JWT secret and `websocketToken`; do not commit real credentials or tokens. Some native addons have been redacted, which may cause errors during execution. Native addons will be replaced upon acceptance.
 
 The server reads HTTPS keys at `src/certs/server.key` and `src/certs/server.crt`, and session keys beneath `src/certs/sessions/`. These files are excluded from version control. Generate local-only material with `npm run https-certs` and `npm run session-certs`, or provision trusted certificates/keys through your deployment secret manager. The self-signed certificate helper is for development only.
 

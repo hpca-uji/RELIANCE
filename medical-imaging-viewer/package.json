@@ -53,7 +53,7 @@
     "pino-pretty": "^10.2.3",
     "point-of-view": "^6.3.0",
     "prettier": "^3.0.3",
-    "reliance-dicom-dimse-native": "^2.4.2",
+    "dicom-dimse-native": "^2.4.2",
     "shelljs": "^0.8.5",
     "simple-node-logger": "^21.8.12",
     "throat": "^6.0.2",

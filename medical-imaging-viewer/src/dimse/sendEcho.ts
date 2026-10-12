@@ -1,5 +1,5 @@
 import { ConfParams, config } from '../utils/config';
-import { echoScu, echoScuOptions, Node as DicomNode } from 'reliance-dicom-dimse-native';
+import { echoScu, echoScuOptions, Node as DicomNode } from 'dicom-dimse-native';
 import { FastifyBaseLogger } from 'fastify/types/logger';
 
 export async function sendEcho(log: FastifyBaseLogger) {

@@ -104,19 +104,13 @@ if __name__ == "__main__":
 
     for label in label_column:
 
-        # Eliminar espacios al principio de las etiquetas
+        # String edit
         new_label = label.replace("' ", "'")
-        # Eliminar etiquetas vacías , '', - ['', ] - , '']
         new_label = new_label.replace("'', ", "")
-        # Eliminar etiquetas vacías al final
         new_label = new_label.replace(", ''", "")
-        # Eliminar comillas simples
         new_label = new_label.replace("'", "")
-        # Sustituir , por |
         new_label = new_label.replace(", ", "|")
-        # Eliminar corchetes
         new_label = new_label.replace("[", "").replace("]", "")
-        # Añadir al array
         processed_label_column.append(new_label)
 
     data["Labels"] = processed_label_column

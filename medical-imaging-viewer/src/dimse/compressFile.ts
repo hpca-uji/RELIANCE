@@ -1,5 +1,5 @@
 import { ConfParams, config } from '../utils/config';
-import { recompress, recompressOptions } from 'reliance-dicom-dimse-native';
+import { recompress, recompressOptions } from 'dicom-dimse-native';
 import { FastifyBaseLogger } from 'fastify/types/logger';
 
 export async function compressFile(inputFile: string, outputDirectory: string, log: FastifyBaseLogger, transferSyntax: string | undefined = undefined) {

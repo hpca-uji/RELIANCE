@@ -40,7 +40,7 @@ torchrun --nproc_per_node=$NGPUS visionets/training/train.py $IMG_DIR \
                                               &> progress_train_distilled.txt                                                 
                                             
 
-# Distilled train over PadChest + ChestX-ray14 on the 32 category pathology system + Semi-supervised Train over ActualTec dataset
+# Distilled train over PadChest + ChestX-ray14 on the 32 category pathology system + Semi-supervised Train over independent source (to be disclosed upon acceptance)
 torchrun --nproc_per_node=$NGPUS visionets/training/train.py $IMG_DIR \
                                               $LABEL_DIR/urgencylabel/ \
                                               --save_path deit.pt \

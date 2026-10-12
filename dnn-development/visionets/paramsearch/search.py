@@ -234,7 +234,7 @@ if __name__ == "__main__":
     else:
         study = optuna.create_study(
             direction="maximize",
-            study_name="Optuna-RELIANCE",
+            study_name="Optuna-Project",
             sampler=optuna.samplers.TPESampler(seed=42, n_startup_trials=50),
         )
 

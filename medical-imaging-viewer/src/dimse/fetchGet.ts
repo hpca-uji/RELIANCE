@@ -1,5 +1,5 @@
 import { ConfParams, config } from '../utils/config';
-import { getScu, getScuOptions, Node as DicomNode } from 'reliance-dicom-dimse-native';
+import { getScu, getScuOptions, Node as DicomNode } from 'dicom-dimse-native';
 import { QUERY_LEVEL, queryLevelToPath, queryLevelToString } from './querLevel';
 import { FastifyBaseLogger } from 'fastify/types/logger';
 
