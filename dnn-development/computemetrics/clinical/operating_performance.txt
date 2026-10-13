@@ -1,27 +1,27 @@
 Hospital metrics
 convnext                             th     sens     spec     fnr     fpr
 Mass                               0.630	0.587	0.974	0.413	0.026
-Lung                               0.155	0.998	0.117	0.002	0.883
+Lung                               0.155	0.997	0.117	0.003	0.883
 Lung-urgent                        0.200	0.971	0.346	0.029	0.654
 Nodules / Multiple nodules         0.540	0.540	0.967	0.460	0.033
 Pneumonia                          0.635	0.950	0.872	0.050	0.128
 Infiltrates                        0.380	0.920	0.514	0.080	0.486
-Atelectasis                        0.430	0.720	0.859	0.280	0.141
+Atelectasis                        0.430	0.724	0.860	0.276	0.140
 COPD / Emphysema                   0.530	0.523	0.820	0.477	0.180
-MH                                 0.310	0.883	0.583	0.117	0.417
+MH                                 0.310	0.882	0.584	0.118	0.416
 MH-urgent                          0.445	0.863	0.668	0.137	0.332
 Cardiomegaly                       0.535	0.837	0.757	0.163	0.243
 Hila                               0.605	0.308	0.898	0.692	0.102
 Vascular hilar enlargement         0.735	0.264	0.916	0.736	0.084
 Aortic elongation                  0.715	0.349	0.936	0.651	0.064
-PDTW                               0.215	0.977	0.367	0.023	0.633
+PDTW                               0.215	0.975	0.367	0.025	0.633
 PDTW-urgent                        0.460	0.886	0.867	0.114	0.133
 Pleural effusion                   0.395	0.864	0.922	0.136	0.078
 Pneumothorax                       0.710	0.864	0.990	0.136	0.010
 Costophrenic angle blunting        0.785	0.500	0.925	0.500	0.075
 PDTW-incidental                    0.580	0.446	0.774	0.554	0.226
 Hiatal hernia                      0.940	0.649	0.991	0.351	0.009
-Foreign bodies                     0.665	0.620	0.967	0.380	0.033
+Foreign bodies                     0.665	0.619	0.967	0.381	0.033
 Calcification                      0.630	0.179	0.974	0.821	0.026
 Suboptimal                         0.865	0.387	0.859	0.613	0.141
 Normal                             0.350	0.484	0.837	0.516	0.163
@@ -34,9 +34,9 @@ Lung-urgent                        0.260	1.000	0.026	0.000	0.974
 Nodules / Multiple nodules         0.830	0.889	0.448	0.111	0.552
 Pneumonia                          0.910	1.000	0.678	0.000	0.322
 Infiltrates                        0.485	1.000	0.075	0.000	0.925
-Atelectasis                        0.730	0.928	0.565	0.072	0.435
+Atelectasis                        0.730	0.929	0.566	0.071	0.434
 COPD / Emphysema                   0.730	0.675	0.755	0.325	0.245
-MH                                 0.640	0.890	0.567	0.110	0.433
+MH                                 0.640	0.890	0.569	0.110	0.431
 MH-urgent                          0.785	0.897	0.612	0.103	0.388
 Cardiomegaly                       0.850	0.907	0.649	0.093	0.351
 Hila                               0.965	0.500	0.782	0.500	0.218
@@ -62,22 +62,22 @@ Lung-urgent                        0.265	0.945	0.343	0.055	0.657
 Nodules / Multiple nodules         0.605	0.683	0.860	0.317	0.140
 Pneumonia                          0.740	0.800	0.945	0.200	0.055
 Infiltrates                        0.370	0.890	0.519	0.110	0.481
-Atelectasis                        0.490	0.848	0.771	0.152	0.229
+Atelectasis                        0.490	0.850	0.772	0.150	0.228
 COPD / Emphysema                   0.545	0.488	0.846	0.512	0.154
-MH                                 0.460	0.891	0.550	0.109	0.450
+MH                                 0.460	0.890	0.551	0.110	0.449
 MH-urgent                          0.610	0.908	0.637	0.092	0.363
 Cardiomegaly                       0.640	0.932	0.643	0.068	0.357
 Hila                               0.780	0.256	0.940	0.744	0.060
 Vascular hilar enlargement         0.830	0.352	0.893	0.648	0.107
 Aortic elongation                  0.670	0.430	0.874	0.570	0.126
-PDTW                               0.235	0.965	0.400	0.035	0.600
+PDTW                               0.235	0.962	0.400	0.038	0.600
 PDTW-urgent                        0.460	0.937	0.740	0.063	0.260
 Pleural effusion                   0.605	0.897	0.872	0.103	0.128
 Pneumothorax                       0.735	0.818	0.996	0.182	0.004
 Costophrenic angle blunting        0.840	0.440	0.923	0.560	0.077
 PDTW-incidental                    0.530	0.360	0.887	0.640	0.113
 Hiatal hernia                      0.785	0.797	0.973	0.203	0.027
-Foreign bodies                     0.620	0.516	0.975	0.484	0.025
+Foreign bodies                     0.620	0.515	0.975	0.485	0.025
 Calcification                      0.755	0.197	0.967	0.803	0.033
 Suboptimal                         0.865	0.152	0.976	0.848	0.024
 Normal                             0.360	0.430	0.863	0.570	0.137
@@ -85,27 +85,27 @@ Media                              0.662	0.778	0.338	0.222
 
 teacherdn169                         th     sens     spec     fnr     fpr
 Mass                               0.685	0.611	0.935	0.389	0.065
-Lung                               0.120	1.000	0.023	0.000	0.977
+Lung                               0.120	1.000	0.024	0.000	0.976
 Lung-urgent                        0.275	0.991	0.170	0.009	0.830
 Nodules / Multiple nodules         0.685	0.635	0.917	0.365	0.083
 Pneumonia                          0.720	0.800	0.903	0.200	0.097
 Infiltrates                        0.325	0.994	0.195	0.006	0.805
-Atelectasis                        0.505	0.812	0.787	0.188	0.213
+Atelectasis                        0.505	0.807	0.787	0.193	0.213
 COPD / Emphysema                   0.475	0.594	0.815	0.406	0.185
-MH                                 0.380	0.875	0.573	0.125	0.427
+MH                                 0.380	0.874	0.574	0.126	0.426
 MH-urgent                          0.580	0.812	0.705	0.188	0.295
 Cardiomegaly                       0.650	0.784	0.767	0.216	0.233
 Hila                               0.845	0.231	0.946	0.769	0.054
 Vascular hilar enlargement         0.880	0.238	0.925	0.762	0.075
 Aortic elongation                  0.610	0.455	0.898	0.545	0.102
-PDTW                               0.255	0.980	0.288	0.020	0.712
+PDTW                               0.255	0.980	0.289	0.020	0.711
 PDTW-urgent                        0.380	0.924	0.795	0.076	0.205
 Pleural effusion                   0.425	0.860	0.921	0.140	0.079
 Pneumothorax                       0.745	0.818	0.980	0.182	0.020
 Costophrenic angle blunting        0.745	0.371	0.959	0.629	0.041
 PDTW-incidental                    0.540	0.624	0.637	0.376	0.363
 Hiatal hernia                      0.925	0.676	0.983	0.324	0.017
-Foreign bodies                     0.555	0.505	0.981	0.495	0.019
+Foreign bodies                     0.555	0.504	0.981	0.496	0.019
 Calcification                      0.740	0.221	0.962	0.779	0.038
 Suboptimal                         0.860	0.255	0.916	0.745	0.084
 Normal                             0.315	0.469	0.892	0.531	0.108

@@ -54,7 +54,7 @@ def load_data(
     with open(labelnames_path, "r") as file:
         labelnames = json.load(file)
 
-    # Load HUGCS data
+    # Load hospital data
     hospital_labels_csv = pd.read_csv(os.path.join(hospital_path, "labels.csv"), sep="\t", index_col=["dicom_id"])
     # Keep labelnames only from labels
     hospital_labels_csv = hospital_labels_csv[labelnames]

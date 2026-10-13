@@ -1,12 +1,12 @@
 Projection
 PA: 29420
-AP: 161590
+AP: 161587
 Lateral (discarded): 32387
 Corrupted (discarded): 17 
 
-Sex assigned at birth
-Female: 90777
-Male: 132636
+Sex assigned at birth (for Frontal Projections)
+Female: 78867
+Male: 112139
 Unknown (discarded): 1
 
 Age

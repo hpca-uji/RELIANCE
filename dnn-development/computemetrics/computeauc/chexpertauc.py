@@ -28,37 +28,19 @@ def load_args():
 
 
 def convert_labels(labels: np.array):
-
-    # Hard coded conversion dict between chexpert labels and 32labels
-    conversion_dict = {
-        0: [31],
-        1: [8, 9, 10],
-        2: [8, 9, 10],
-        3: [1, 2],
-        4: [1, 2],
-        5: [1],
-        6: [1, 2, 5],
-        7: [1, 2, 4],
-        8: [1, 2, 6],
-        9: [14, 15, 17],
-        10: [14, 15, 16],
-        11: [14],
-        12: [14, 15],
-        13: [22],
-    }
-
-    # Convert labels on iteration
+    conversion_dict = {0: [31], 1: [8, 9, 10], 2: [8, 9, 10], 3: [1, 2], 4: [1, 2],
+                       5: [1], 6: [1, 2, 5], 7: [1, 2, 4], 8: [1, 2, 6], 9: [14, 15, 17],
+                       10: [14, 15, 16], 11: [14], 12: [14, 15], 13: [22]}
     converted_labels = np.full((len(labels), 32), -1)
-    for i in range(labels.shape[0]):
-        samplelabel = labels[i]
-        for position, value in enumerate(samplelabel):
-            if value == 1:
-                converted_labels[i, conversion_dict[position]] = 1
-            elif value == 0:
-                converted_labels[i, conversion_dict[position]] = 0
-            elif position == 0:
-                converted_labels[i, conversion_dict[position]] = 0
-
+    for position, targets in conversion_dict.items():
+        col = labels[:, position].astype(float)
+        pos = col == 1
+        neg = (col == 0) | ((position == 0) & np.isnan(col))
+        for t in targets:
+            cur = converted_labels[:, t]
+            cur[neg & (cur == -1)] = 0
+            cur[pos] = 1
+            converted_labels[:, t] = cur
     return converted_labels
 
 

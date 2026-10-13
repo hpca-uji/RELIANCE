@@ -1,0 +1,120 @@
+/home/fsoler/projects/reliance/computemetrics/clinical/ece.py:36: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  internal_ts_labels = torch.load(os.path.join(internal_labels_path, "ts_label.pt"))
+/home/fsoler/projects/reliance/computemetrics/clinical/ece.py:42: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  internal_ts_preds[(idf)] = torch.load(load_path)
+
+convnext
+label                          prev_int meanp_int ECE_int prev_hos meanp_hos ECE_hos
+Mass                              0.047     0.207   0.160    0.017     0.132   0.115
+Lung                              0.537     0.496   0.041    0.207     0.494   0.287
+Lung-urgent                       0.380     0.426   0.046    0.132     0.393   0.261
+Nodules / Multiple nodules        0.061     0.268   0.207    0.008     0.159   0.150
+Pneumonia                         0.036     0.277   0.241    0.003     0.361   0.358
+Infiltrates                       0.233     0.396   0.163    0.093     0.424   0.331
+Atelectasis                       0.112     0.290   0.178    0.034     0.211   0.177
+COPD / Emphysema                  0.109     0.336   0.227    0.098     0.309   0.211
+MH                                0.150     0.293   0.143    0.341     0.450   0.109
+MH-urgent                         0.097     0.233   0.136    0.170     0.410   0.240
+Cardiomegaly                      0.079     0.198   0.119    0.154     0.369   0.215
+Hila                              0.015     0.203   0.188    0.010     0.212   0.201
+Vascular hilar enlargement        0.020     0.255   0.235    0.026     0.262   0.236
+Aortic elongation                 0.054     0.195   0.141    0.202     0.232   0.097
+PDTW                              0.317     0.429   0.111    0.119     0.395   0.277
+PDTW-urgent                       0.191     0.315   0.125    0.086     0.255   0.169
+Pleural effusion                  0.131     0.237   0.106    0.065     0.152   0.087
+Pneumothorax                      0.036     0.157   0.121    0.003     0.096   0.093
+Costophrenic angle blunting       0.027     0.184   0.157    0.015     0.217   0.201
+PDTW-incidental                   0.075     0.378   0.303    0.025     0.398   0.373
+Hiatal hernia                     0.012     0.059   0.047    0.010     0.091   0.082
+Foreign bodies                    0.103     0.152   0.049    0.151     0.165   0.048
+Calcification                     0.035     0.198   0.162    0.246     0.171   0.086
+Suboptimal                        0.008     0.158   0.149    0.371     0.458   0.194
+Normal                            0.258     0.354   0.096    0.476     0.270   0.207
+Macro ECE                                           0.146                      0.192
+
+deit
+label                          prev_int meanp_int ECE_int prev_hos meanp_hos ECE_hos
+Mass                              0.047     0.389   0.342    0.017     0.719   0.702
+Lung                              0.537     0.493   0.044    0.207     0.638   0.432
+Lung-urgent                       0.380     0.464   0.084    0.132     0.722   0.590
+Nodules / Multiple nodules        0.061     0.551   0.489    0.008     0.811   0.803
+Pneumonia                         0.036     0.582   0.546    0.003     0.824   0.821
+Infiltrates                       0.233     0.458   0.225    0.093     0.787   0.694
+Atelectasis                       0.112     0.469   0.357    0.034     0.663   0.630
+COPD / Emphysema                  0.109     0.461   0.352    0.098     0.518   0.420
+MH                                0.150     0.422   0.272    0.341     0.634   0.293
+MH-urgent                         0.097     0.405   0.308    0.170     0.621   0.451
+Cardiomegaly                      0.079     0.349   0.270    0.154     0.609   0.455
+Hila                              0.015     0.436   0.421    0.010     0.659   0.649
+Vascular hilar enlargement        0.020     0.445   0.425    0.026     0.778   0.753
+Aortic elongation                 0.054     0.302   0.248    0.202     0.516   0.314
+PDTW                              0.317     0.503   0.185    0.119     0.505   0.387
+PDTW-urgent                       0.191     0.419   0.228    0.086     0.400   0.314
+Pleural effusion                  0.131     0.350   0.219    0.065     0.294   0.229
+Pneumothorax                      0.036     0.303   0.267    0.003     0.585   0.582
+Costophrenic angle blunting       0.027     0.365   0.339    0.015     0.377   0.362
+PDTW-incidental                   0.075     0.588   0.513    0.025     0.793   0.768
+Hiatal hernia                     0.012     0.239   0.227    0.010     0.651   0.641
+Foreign bodies                    0.103     0.213   0.110    0.151     0.231   0.083
+Calcification                     0.035     0.470   0.434    0.246     0.693   0.446
+Suboptimal                        0.008     0.333   0.325    0.371     0.772   0.404
+Normal                            0.258     0.418   0.160    0.476     0.239   0.238
+Macro ECE                                           0.296                      0.498
+
+swintv2
+label                          prev_int meanp_int ECE_int prev_hos meanp_hos ECE_hos
+Mass                              0.047     0.180   0.132    0.017     0.198   0.182
+Lung                              0.537     0.523   0.014    0.207     0.532   0.326
+Lung-urgent                       0.380     0.441   0.061    0.132     0.484   0.352
+Nodules / Multiple nodules        0.061     0.297   0.236    0.008     0.322   0.313
+Pneumonia                         0.036     0.296   0.260    0.003     0.310   0.308
+Infiltrates                       0.233     0.374   0.141    0.093     0.415   0.322
+Atelectasis                       0.112     0.315   0.203    0.034     0.316   0.282
+COPD / Emphysema                  0.109     0.331   0.222    0.098     0.303   0.205
+MH                                0.150     0.330   0.180    0.341     0.566   0.225
+MH-urgent                         0.097     0.274   0.177    0.170     0.517   0.347
+Cardiomegaly                      0.079     0.241   0.162    0.154     0.508   0.354
+Hila                              0.015     0.190   0.175    0.010     0.209   0.198
+Vascular hilar enlargement        0.020     0.296   0.276    0.026     0.360   0.335
+Aortic elongation                 0.054     0.191   0.136    0.202     0.279   0.155
+PDTW                              0.317     0.425   0.107    0.119     0.383   0.264
+PDTW-urgent                       0.191     0.342   0.151    0.086     0.365   0.278
+Pleural effusion                  0.131     0.286   0.155    0.065     0.287   0.223
+Pneumothorax                      0.036     0.110   0.074    0.003     0.058   0.055
+Costophrenic angle blunting       0.027     0.229   0.203    0.015     0.248   0.232
+PDTW-incidental                   0.075     0.328   0.253    0.025     0.303   0.278
+Hiatal hernia                     0.012     0.047   0.035    0.010     0.117   0.107
+Foreign bodies                    0.103     0.153   0.050    0.151     0.132   0.052
+Calcification                     0.035     0.253   0.218    0.246     0.246   0.119
+Suboptimal                        0.008     0.128   0.119    0.371     0.239   0.166
+Normal                            0.258     0.362   0.104    0.476     0.240   0.236
+Macro ECE                                           0.154                      0.236
+
+teacherdn169
+label                          prev_int meanp_int ECE_int prev_hos meanp_hos ECE_hos
+Mass                              0.047     0.222   0.175    0.017     0.259   0.243
+Lung                              0.537     0.530   0.013    0.207     0.575   0.369
+Lung-urgent                       0.380     0.452   0.072    0.132     0.556   0.424
+Nodules / Multiple nodules        0.061     0.318   0.257    0.008     0.363   0.355
+Pneumonia                         0.036     0.297   0.261    0.003     0.395   0.392
+Infiltrates                       0.233     0.403   0.170    0.093     0.553   0.460
+Atelectasis                       0.112     0.320   0.208    0.034     0.346   0.312
+COPD / Emphysema                  0.109     0.315   0.206    0.098     0.301   0.202
+MH                                0.150     0.316   0.166    0.341     0.493   0.151
+MH-urgent                         0.097     0.264   0.167    0.170     0.446   0.276
+Cardiomegaly                      0.079     0.221   0.142    0.154     0.410   0.256
+Hila                              0.015     0.223   0.208    0.010     0.283   0.273
+Vascular hilar enlargement        0.020     0.253   0.232    0.026     0.412   0.386
+Aortic elongation                 0.054     0.188   0.133    0.202     0.263   0.082
+PDTW                              0.317     0.435   0.117    0.119     0.448   0.329
+PDTW-urgent                       0.191     0.318   0.127    0.086     0.290   0.203
+Pleural effusion                  0.131     0.253   0.122    0.065     0.179   0.115
+Pneumothorax                      0.036     0.146   0.110    0.003     0.158   0.155
+Costophrenic angle blunting       0.027     0.182   0.156    0.015     0.170   0.155
+PDTW-incidental                   0.075     0.374   0.299    0.025     0.454   0.430
+Hiatal hernia                     0.012     0.046   0.034    0.010     0.134   0.124
+Foreign bodies                    0.103     0.146   0.043    0.151     0.116   0.042
+Calcification                     0.035     0.273   0.238    0.246     0.260   0.069
+Suboptimal                        0.008     0.106   0.098    0.371     0.380   0.157
+Normal                            0.258     0.355   0.097    0.476     0.235   0.242
+Macro ECE                                           0.154                      0.248
