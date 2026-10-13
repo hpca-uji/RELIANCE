@@ -7,7 +7,7 @@ Corrupted (discarded): 17
 Sex assigned at birth (for Frontal Projections)
 Female: 78867
 Male: 112139
-Unknown (discarded): 1
+Unknown: 1
 
 Age
 0 (discarded): 3
