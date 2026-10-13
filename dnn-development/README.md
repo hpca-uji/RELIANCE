@@ -33,6 +33,7 @@ This folder contains the scripts used to evaluate model performance for the deve
     - `hospitalauc.py`: evaluates AUC on the Hospital dataset.
     - `chexpertauc.py`: evaluates AUC on the CheXpert external benchmark.
     - `aucops.py`: contains the DeLong variance and confidence interval helper functions.
+    - `ciaucdiff.py`: Additional paired bootstrap analyses reported in the paper.
     - `results`: contains AUC results stored into JSON files for different datasets, models and labels.
         - `internal.json`: Performance over different splits of the development dataset PadChest + CX14 over the whole taxonomy of labels.
         - `interal_hospital.json`: Performance over different splits of the development dataset PadChest + CX14 over the restricted space of available labels at the Hospital.
@@ -41,8 +42,10 @@ This folder contains the scripts used to evaluate model performance for the deve
         - `hospital_common.json`: Performance over hospital cohort data over the restricted space of available labels at the common intersection of CheXpert, development dataset and Hospital.
         - `chexpert.json` and `cx14.json`: Self explanatory.
 
-- `clinical/`: Estimates the operating threshold that maximizes multi-label F-beta performance and reports sensitivity/specificity metrics over test partition of the development dataset and hospital cohort data, with thresholds adjusted using validation split of the development dataset.
-    - `operating_performance.txt`: Clinical operating point results
+- `clinical/`: Estimates the operating threshold that maximizes multi-label F-beta performance and reports sensitivity/specificity metrics over test partition of the development dataset and hospital cohort data, with thresholds adjusted using validation split of the development dataset. Also includes code for ECE computation.
+    - `operating_performance.txt`: Clinical operating point results.
+    - `ece_results.txt`: Results from ECE computation.
+
 
 The code in this folder is provided for quality assurance, to document and verify the correctness of the reported AUC values and clinical operating points. Metrics reported in the paper can be reproduced using this scripts together with files from `modelpreds` and `dbprocess`. 
 

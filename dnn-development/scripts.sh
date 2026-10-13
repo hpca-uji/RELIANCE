@@ -10,14 +10,14 @@ CHEXPERT_TRAIN_CSV_PATH=/path/to/chexpert/labels.csv
 PRECOMPUTED_DIR=modelpreds/teacherdn169/precomputed
 MODELS_DIR=modelpreds/
 LABEL_DIR=dbprocess/common/trainlabel
-LABELNAMES=dbprocess/padchest/dictprocess/urgencylabel/labelnames.json
-HOSPITAL_LABELNAMES=computemetrics/computeauc/hospital_labelnames.json
-COMMON_LABELNAMES=computemetrics/computeauc/common_labelnames.json
+LABELNAMES_PATH=dbprocess/padchest/dictprocess/urgencylabel/labelnames.json
+HOSPITAL_LABELNAMES_PATH=computemetrics/computeauc/hospital_labelnames.json
+COMMON_LABELNAMES_PATH=computemetrics/computeauc/common_labelnames.json
 HOSPITAL_PATH=dbprocess/hospital
 
 # Global parameters
 # GPUs for training scripts
-NGPUS=2
+NGPUS=8
 
 ## TRAINING SCRIPTS ##
 
@@ -105,20 +105,28 @@ python3 visionets/utils/exporters/export_saved_model.py model.pt jitmodel.jit ji
 ## Utils/metrics ##
 
 # Metrics
-python3 visionets/utils/metrics/metrics.py $LABEL_DIR/urgencylabel/ $LABELNAMES inferencedata &> progress_metrics.txt
+python3 visionets/utils/metrics/metrics.py $LABEL_DIR/urgencylabel/ $LABELNAMES_PATH inferencedata &> progress_metrics.txt
 
 ## COMPUTEMETRICS ##
 
 # Clinical operating points
-python operating_threshold.py $LABEL_PATH \
+python computemetrics/clinical/operating_threshold.py $LABEL_PATH \
     $MODELS_DIR \
     $HOSPITAL_PATH \
     $LABELNAMES_PATH \
     --models_idfs convnext deit swintv2 teacherdn169 \
     --beta 2 &> progress.txt
 
+# ECE computation
+python computemetrics/clinical/ece.py $LABEL_PATH \
+    $MODELS_DIR \
+    $HOSPITAL_PATH \
+    $LABELNAMES_PATH \
+    $HOSPITAL_LABELNAMES_PATH \
+    --models_idfs convnext deit swintv2 teacherdn169 &> progress.txt
+
 # Internal AUC computation over restricted Hospital labelnames subset
-python internalauc.py $LABEL_PATH \
+python computemetrics/computeauc/internalauc.py $LABEL_PATH \
     $LABELNAMES_PATH \
     $MODELS_DIR \
     internalauc_hospital.json \
@@ -128,7 +136,7 @@ python internalauc.py $LABEL_PATH \
     --selected_labelnames_path hospital_labelnames.json &> progress.txt
 
 # Hospital AUC computation over restricted common labelnames subset
-python hospitalauc.py $HOSPITAL_PATH/labels.csv \
+python computemetrics/computeauc/hospitalauc.py $HOSPITAL_PATH/labels.csv \
     $LABELNAMES_PATH \
     $HOSPITAL_PATH \
     hospital_common.json \
@@ -137,9 +145,16 @@ python hospitalauc.py $HOSPITAL_PATH/labels.csv \
     --selected_labelnames_path common_labelnames.json &> progress.txt
 
 # Chexpert AUC computation
-python chexpertauc.py $CHEXPERT_TRAIN_CSV_PATH \
+python computemetrics/computeauc/chexpertauc.py $CHEXPERT_TRAIN_CSV_PATH \
     $LABELNAMES_PATH \
     $MODELS_DIR \
     chexpertauc.json \
     --models_idfs convnext deit swintv2 teacherdn169 \
     --bootstraps 1000 --alpha 0.95 &> progress.txt
+
+# CI AUC Diff
+python computemetrics/computeauc/cidiff.py $CHEXPERT_TRAIN_CSV_PATH \
+    $LABELNAMES_PATH \
+    $COMMON_LABELNAMES_PATH \
+    $HOSPITAL_PATH \
+    $MODELS_DIR &> progress.txt

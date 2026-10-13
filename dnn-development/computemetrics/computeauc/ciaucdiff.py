@@ -1,15 +1,11 @@
 """Additional paired bootstrap analyses reported in the paper.
 
-Run from dnn-development/:
-
-    python3 extra_analyses.py [--chexpert_csv /path/to/chexpert/labels.csv]
-
 Outputs:
   * Paired bootstrap (1000 resamples of hospital images) of the difference in
     mean AUC over the 14 shared labels: DenseNet-169 - SwinTV2, ConvNeXt - DenseNet-169.
-  * With --chexpert_csv: bootstrap CIs (1000 resamples of CheXpert images) of the
+  * Bootstrap CIs (1000 resamples of CheXpert images) of the
     mean AUC over the 14 shared labels for DenseNet-169 and SwinTV2, and their
-    paired difference, using the corrected label conversion of chexpertauc.py.
+    paired difference
 """
 
 import argparse
