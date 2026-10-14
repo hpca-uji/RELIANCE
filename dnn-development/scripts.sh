@@ -110,7 +110,7 @@ python3 visionets/utils/metrics/metrics.py $LABEL_DIR/urgencylabel/ $LABELNAMES_
 ## COMPUTEMETRICS ##
 
 # Clinical operating points
-python computemetrics/clinical/operating_threshold.py $LABEL_PATH \
+python computemetrics/clinical/operating_threshold.py $LABEL_DIR \
     $MODELS_DIR \
     $HOSPITAL_PATH \
     $LABELNAMES_PATH \
@@ -118,7 +118,7 @@ python computemetrics/clinical/operating_threshold.py $LABEL_PATH \
     --beta 2 &> progress.txt
 
 # ECE computation
-python computemetrics/clinical/ece.py $LABEL_PATH \
+python computemetrics/clinical/ece.py $LABEL_DIR \
     $MODELS_DIR \
     $HOSPITAL_PATH \
     $LABELNAMES_PATH \
@@ -126,7 +126,7 @@ python computemetrics/clinical/ece.py $LABEL_PATH \
     --models_idfs convnext deit swintv2 teacherdn169 &> progress.txt
 
 # Internal AUC computation over restricted Hospital labelnames subset
-python computemetrics/computeauc/internalauc.py $LABEL_PATH \
+python computemetrics/computeauc/internalauc.py $LABEL_DIR \
     $LABELNAMES_PATH \
     $MODELS_DIR \
     internalauc_hospital.json \
@@ -153,7 +153,7 @@ python computemetrics/computeauc/chexpertauc.py $CHEXPERT_TRAIN_CSV_PATH \
     --bootstraps 1000 --alpha 0.95 &> progress.txt
 
 # CI AUC Diff
-python computemetrics/computeauc/cidiff.py $CHEXPERT_TRAIN_CSV_PATH \
+python computemetrics/computeauc/ciaucdiff.py $CHEXPERT_TRAIN_CSV_PATH \
     $LABELNAMES_PATH \
     $COMMON_LABELNAMES_PATH \
     $HOSPITAL_PATH \
